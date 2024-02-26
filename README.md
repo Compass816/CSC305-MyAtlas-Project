@@ -1,1 +1,1 @@
-# csc305-project
+# CSC 305 Project
