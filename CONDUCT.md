@@ -1,4 +1,3 @@
-
 # Contributor Covenant Code of Conduct
 
 ## Our Pledge
@@ -19,7 +18,16 @@ Examples of behavior that contributes to a positive environment for our
 community include:
 
 * Demonstrating empathy and kindness toward other people
+* Attendance is expected for every meeting
+* Missing a meeting is acceptable only given advance notice and reaching out about missed work or important notes.
+* If you are going to be late for a meeting it is imperative to let the group know via discord.
+* Assignments will be made and done through the GitHub project board where someone can volunteer to do a task and try to complete it before the sprint deadline. 
+* Our options of dealing with poorly completed work is leaving comments on the task and it can be explained in the SCRUM meeting as to what is troublesome about the work. 
+* To ensure participation across all team members make sure to ask questions about anything that is hard to understand or if somebody doesn’t seem to have had an opportunity to speak.
+* Meetings happen every Friday, 1 PM online in Discord.
+* Meetings note will be taken by William and everything discussed will be logged in Discord.
 * Being respectful of differing opinions, viewpoints, and experiences
+* Making decisions based on a group consensus
 * Giving and gracefully accepting constructive feedback
 * Accepting responsibility and apologizing to those affected by our mistakes,
   and learning from the experience
@@ -60,8 +68,7 @@ representative at an online or offline event.
 ## Enforcement
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported to the community leaders responsible for enforcement at
-[INSERT CONTACT METHOD].
+reported to the community leaders responsible for enforcement at uricsc305@gmail.com.
 All complaints will be reviewed and investigated promptly and fairly.
 
 All community leaders are obligated to respect the privacy and security of the
@@ -79,7 +86,7 @@ unprofessional or unwelcome in the community.
 
 **Consequence**: A private, written warning from community leaders, providing
 clarity around the nature of the violation and an explanation of why the
-behavior was inappropriate. A public apology may be requested.
+behavior was inappropriate. A public apology may be requested. 
 
 ### 2. Warning
 
@@ -131,3 +138,10 @@ For answers to common questions about this code of conduct, see the FAQ at
 [Mozilla CoC]: https://github.com/mozilla/diversity
 [FAQ]: https://www.contributor-covenant.org/faq
 [translations]: https://www.contributor-covenant.org/translations
+
+
+### Signatures
+William Kingvilay
+Derrick Roberts
+Matthew Sturtevant
+Ryan Brooks
