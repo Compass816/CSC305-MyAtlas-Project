@@ -12,3 +12,8 @@ Observation 3:
 - Observation Statement: Privacy is important to our users
 - Supporting Data: More than half the users want a "ghost mode", 72% of users want the option to set their accounts as public/private, and 63% of users said that privacy was among their most valuable features in the app.
 - Team Action: prioritize these features
+
+Observation 4:
+Observation Statement: People will most likely not use this app every day but treat it more as a trip planner.
+Supporting Data: Most users want a review function in the app. However, most users say they will only be traveling monthly or rarely. Another question indicates that the feature that is most valuable is the review feature.
+Team Action: Ensure the review feature is implemented in the app.
