@@ -7,3 +7,8 @@ Observation 2:
 - Observation Statement: The social media aspect of sharing photos with your friends is the most important part
 - Supporting Data: 72.2% of users say they would use the app to share photos with their friends and family while 75.0% of users also said they would like to discover attractions
 - Team Action: Start thinking of good GUIs to make
+
+Observation 3:
+- Observation Statement: Privacy is important to our users
+- Supporting Data: More than half the users want a "ghost mode", 72% of users want the option to set their accounts as public/private, and 63% of users said that privacy was among their most valuable features in the app.
+- Team Action: prioritize these features
