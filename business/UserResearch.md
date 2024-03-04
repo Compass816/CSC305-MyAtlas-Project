@@ -14,6 +14,6 @@ Observation 3:
 - Team Action: prioritize these features
 
 Observation 4:
-Observation Statement: People will most likely not use this app every day but treat it more as a trip planner.
-Supporting Data: Most users want a review function in the app. However, most users say they will only be traveling monthly or rarely. Another question indicates that the feature that is most valuable is the review feature.
-Team Action: Ensure the review feature is implemented in the app.
+- Observation Statement: People will most likely not use this app every day but treat it more as a trip planner.
+- Supporting Data: Most users want a review function in the app. However, most users say they will only be traveling monthly or rarely. Another question indicates that the feature that is most valuable is the review feature.
+- Team Action: Ensure the review feature is implemented in the app.
