@@ -4,9 +4,9 @@ Metric 3:
 Metric 4:
 Metric 5:
 Metric 6:
-Metric 7:
-Metric 8:
-Metric 9:
+Metric 7: Google play Store     
+Metric 8: Google Analytics     
+Metric 9: Google Analytics     
 Metric 10:
 Metric 11:
 Metric 12:
