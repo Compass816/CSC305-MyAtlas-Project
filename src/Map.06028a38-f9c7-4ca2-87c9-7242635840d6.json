@@ -1,4 +1,5 @@
 {
+    "id": "06028a38-f9c7-4ca2-87c9-7242635840d6",
     "type": "Screen",
     "translatedName": "Screen",
     "reactType": "ViewWithProps",
@@ -38,35 +39,28 @@
         "TabNavigationOptions": {
             "tabBarVisible": true
         },
-        "TabNavigatorIcon": {},
-        "DrawerNavigationOptions": {},
-        "StackNavigationOptions": {
-            "headerStyle": {}
-        },
         "ScreenOrientation": "portrait",
         "DesignerHeight": 667,
         "DesignerWidth": 375,
         "ResponsiveWidth": 375,
-        "isSimple": true,
-        "navigationOptions": {
-            "headerStyle": {}
-        },
-        "tabNavigationOptions": {}
+        "isSimple": true
     },
     "children": [
         {
-            "type": "Image",
-            "translatedName": "Image",
+            "type": "Map",
+            "translatedName": "Map",
+            "reactType": "MapView",
             "properties": {
-                "Picture": "map.png",
-                "resizeMode": "stretch",
-                "Height": 607,
-                "Width": 375,
+                "Latitude": 37.78,
+                "Longitude": -122.4,
+                "Zoom": 0,
+                "Height": 608,
+                "Width": 374,
                 "Visible": true,
-                "X": -1,
-                "Y": 0,
-                "RelativeX": -1,
-                "RelativeY": 0,
+                "X": 0.6666666865348816,
+                "Y": 0.6666666865348816,
+                "RelativeX": 0.6666666865348816,
+                "RelativeY": 0.6666666865348816,
                 "ResizeMode": "STRETCH",
                 "style": {
                     "marginTop": 0,
@@ -86,19 +80,37 @@
                         "height": 0
                     },
                     "position": "absolute",
-                    "left": "52.844441731770836%",
-                    "top": "35.01218140929535%",
+                    "left": "34.08888346354167%",
+                    "top": "34.512434334590516%",
                     "display": "flex"
                 },
-                "capInsets": {},
+                "LatitudeDelta": 0.09,
+                "LongitudeDelta": 0.04,
+                "provider": "google",
+                "showsUserLocation": true,
+                "showsMyLocationButton": true,
+                "showsCompass": true,
+                "zoomEnabled": true,
+                "rotateEnabled": true,
+                "scrollEnabled": true,
+                "showsTraffic": false,
+                "mapType": "standard",
+                "region": {
+                    "latitude": 37.78,
+                    "longitude": -122.4,
+                    "latitudeDelta": 0.09,
+                    "longitudeDelta": 0.04
+                },
+                "initialRegion": {},
+                "legalLabelInsets": {},
                 "ParentId": "06028a38-f9c7-4ca2-87c9-7242635840d6",
                 "position": "absolute",
-                "edgeOffsets": 0
+                "edgeOffsets": 0.6666666865348816
             },
             "children": [],
-            "id": "811efad0-76dc-4ef8-9aab-0269c310e40f",
-            "thunkableVersion": 448,
-            "name": "Image3"
+            "id": "c37ecc80-7e3f-4d96-a908-ca5976d988bf",
+            "thunkableVersion": 450,
+            "name": "Map1"
         },
         {
             "type": "Group",
@@ -167,7 +179,6 @@
                             "top": "25.71682908545727%",
                             "display": "flex"
                         },
-                        "capInsets": {},
                         "ParentId": "06028a38-f9c7-4ca2-87c9-7242635840d6",
                         "position": "absolute",
                         "edgeOffsets": 613
@@ -213,7 +224,6 @@
                             "top": "62.64836941880622%",
                             "display": "flex"
                         },
-                        "capInsets": {},
                         "ParentId": "06028a38-f9c7-4ca2-87c9-7242635840d6",
                         "position": "absolute",
                         "edgeOffsets": 614
@@ -259,7 +269,6 @@
                             "top": "87.98570075313906%",
                             "display": "flex"
                         },
-                        "capInsets": {},
                         "ParentId": "06028a38-f9c7-4ca2-87c9-7242635840d6",
                         "position": "absolute",
                         "edgeOffsets": 616
@@ -305,7 +314,6 @@
                             "top": "84.48744377811094%",
                             "display": "flex"
                         },
-                        "capInsets": {},
                         "ParentId": "06028a38-f9c7-4ca2-87c9-7242635840d6",
                         "position": "absolute",
                         "edgeOffsets": 613
@@ -321,7 +329,6 @@
             "name": "Group1"
         }
     ],
-    "id": "06028a38-f9c7-4ca2-87c9-7242635840d6",
     "thunkableVersion": 448,
     "name": "Map"
 }

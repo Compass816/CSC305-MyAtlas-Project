@@ -1,4 +1,5 @@
 {
+    "id": "8c83fa84-0f34-4465-92fe-0e77d0337c78",
     "type": "Screen",
     "translatedName": "Screen",
     "reactType": "ViewWithProps",
@@ -39,20 +40,11 @@
         "TabNavigationOptions": {
             "tabBarVisible": true
         },
-        "TabNavigatorIcon": {},
-        "DrawerNavigationOptions": {},
-        "StackNavigationOptions": {
-            "headerStyle": {}
-        },
         "ScreenOrientation": "portrait",
         "DesignerHeight": 667,
         "DesignerWidth": 375,
         "ResponsiveWidth": 375,
-        "isSimple": true,
-        "navigationOptions": {
-            "headerStyle": {}
-        },
-        "tabNavigationOptions": {}
+        "isSimple": true
     },
     "children": [
         {
@@ -91,7 +83,6 @@
                     "top": "73.37190779610195%",
                     "display": "flex"
                 },
-                "capInsets": {},
                 "ParentId": "8c83fa84-0f34-4465-92fe-0e77d0337c78",
                 "position": "absolute",
                 "edgeOffsets": 498
@@ -99,7 +90,7 @@
             "children": [],
             "id": "a1709b44-35b9-47b6-adee-386d2c98c3e3",
             "thunkableVersion": 448,
-            "name": "Image2"
+            "name": "GoogleSignUp"
         },
         {
             "type": "Image",
@@ -137,7 +128,6 @@
                     "top": "72.02258245877061%",
                     "display": "flex"
                 },
-                "capInsets": {},
                 "ParentId": "8c83fa84-0f34-4465-92fe-0e77d0337c78",
                 "position": "absolute",
                 "edgeOffsets": 491
@@ -145,7 +135,7 @@
             "children": [],
             "id": "2db5ecc4-2f36-4bf6-8930-d382638c43e9",
             "thunkableVersion": 448,
-            "name": "Image1"
+            "name": "AppleSignUp"
         },
         {
             "type": "Group",
@@ -202,7 +192,6 @@
                             "color": "rgba(255, 255, 255, 1)",
                             "fontSize": 50,
                             "fontStyle": "normal",
-                            "textShadowOffset": {},
                             "letterSpacing": 0,
                             "textDecorationLine": "none",
                             "textDecorationStyle": "solid",
@@ -275,7 +264,6 @@
                             "color": "rgba(255, 255, 255, 1)",
                             "fontSize": 46,
                             "fontStyle": "normal",
-                            "textShadowOffset": {},
                             "letterSpacing": 0,
                             "textDecorationLine": "none",
                             "textDecorationStyle": "solid",
@@ -351,7 +339,6 @@
                     "color": "rgba(255, 255, 255, 1)",
                     "fontSize": 18,
                     "fontStyle": "normal",
-                    "textShadowOffset": {},
                     "letterSpacing": 0,
                     "textDecorationLine": "none",
                     "textDecorationStyle": "solid",
@@ -507,7 +494,6 @@
             "name": "LogInButton"
         }
     ],
-    "id": "8c83fa84-0f34-4465-92fe-0e77d0337c78",
     "thunkableVersion": 447,
     "name": "Welcome"
 }

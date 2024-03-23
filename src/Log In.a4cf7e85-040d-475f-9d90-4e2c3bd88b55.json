@@ -1,4 +1,5 @@
 {
+    "id": "a4cf7e85-040d-475f-9d90-4e2c3bd88b55",
     "type": "Screen",
     "translatedName": "Screen",
     "reactType": "ViewWithProps",
@@ -39,20 +40,11 @@
         "TabNavigationOptions": {
             "tabBarVisible": true
         },
-        "TabNavigatorIcon": {},
-        "DrawerNavigationOptions": {},
-        "StackNavigationOptions": {
-            "headerStyle": {}
-        },
         "ScreenOrientation": "portrait",
         "DesignerHeight": 667,
         "DesignerWidth": 375,
         "ResponsiveWidth": 375,
-        "isSimple": true,
-        "navigationOptions": {
-            "headerStyle": {}
-        },
-        "tabNavigationOptions": {}
+        "isSimple": true
     },
     "children": [
         {
@@ -91,7 +83,6 @@
                     "top": "8.025674662668665%",
                     "display": "flex"
                 },
-                "capInsets": {},
                 "ParentId": "04466a7d-9318-4506-900b-91b64418b614",
                 "position": "absolute",
                 "edgeOffsets": 9
@@ -108,8 +99,8 @@
             "translatedName": "Group",
             "reactType": "ViewWithProps",
             "properties": {
-                "Height": 305,
-                "Width": 315,
+                "Height": 374,
+                "Width": 319,
                 "Visible": true,
                 "X": 30,
                 "Y": 201,
@@ -131,6 +122,72 @@
                 "resizeMode": "contain"
             },
             "children": [
+                {
+                    "type": "Label",
+                    "translatedName": "Label",
+                    "reactType": "Text",
+                    "properties": {
+                        "Text": "",
+                        "FontSize": 18,
+                        "Font": "",
+                        "CustomFont": "",
+                        "LineHeight": 1,
+                        "Color": "rgba(0, 0, 0, 1)",
+                        "Height": 45,
+                        "Width": 311,
+                        "Visible": true,
+                        "X": 33,
+                        "Y": 506,
+                        "RelativeX": 3,
+                        "RelativeY": 305,
+                        "ResizeMode": "STRETCH",
+                        "style": {
+                            "color": "rgba(0, 0, 0, 1)",
+                            "fontSize": 18,
+                            "fontStyle": "normal",
+                            "textShadowOffset": {},
+                            "letterSpacing": 0,
+                            "textDecorationLine": "none",
+                            "textDecorationStyle": "solid",
+                            "textDecorationColor": "rgba(0, 0, 0, 1)",
+                            "writingDirection": "auto",
+                            "marginTop": 0,
+                            "marginBottom": 0,
+                            "marginLeft": 0,
+                            "marginRight": 0,
+                            "paddingTop": 0,
+                            "paddingBottom": 0,
+                            "paddingLeft": 0,
+                            "paddingRight": 0,
+                            "flexWrap": "wrap",
+                            "borderWidth": 0,
+                            "borderRadius": 0,
+                            "borderColor": "rgba(236, 237, 237, 1)",
+                            "borderStyle": "solid",
+                            "shadowColor": "rgba(0, 0, 0, 0)",
+                            "shadowOpacity": 0,
+                            "scaledShadowOpacity": 0,
+                            "shadowRadius": 0,
+                            "shadowOffset": {
+                                "width": 0,
+                                "height": 0
+                            },
+                            "position": "absolute",
+                            "left": "21.466666666666665%",
+                            "top": "74.12153298350825%",
+                            "lineHeight": 1,
+                            "display": "flex"
+                        },
+                        "ParentId": "a4cf7e85-040d-475f-9d90-4e2c3bd88b55",
+                        "position": "absolute",
+                        "edgeOffsets": 506,
+                        "children": ""
+                    },
+                    "children": [],
+                    "id": "37691670-ef74-4366-9ed3-0500f7b395cc",
+                    "thunkableVersion": 448,
+                    "name": "ErrorLabel1"
+                },
                 {
                     "type": "Button",
                     "translatedName": "Button",
@@ -204,7 +261,6 @@
                             "color": "rgba(0, 0, 0, 1)",
                             "fontSize": 16,
                             "fontStyle": "normal",
-                            "textShadowOffset": {},
                             "letterSpacing": 0,
                             "textDecorationLine": "none",
                             "textDecorationStyle": "solid",
@@ -244,12 +300,13 @@
                         "ParentId": "04466a7d-9318-4506-900b-91b64418b614",
                         "position": "absolute",
                         "edgeOffsets": 325,
-                        "placeholder": "Type here"
+                        "placeholder": "Type here",
+                        "secureTextEntry": true
                     },
                     "children": [],
                     "id": "97a32405-5692-45cc-8121-6fb5ab4b8b66",
                     "thunkableVersion": 447,
-                    "name": "Text_Input8"
+                    "name": "PasswordInput1"
                 },
                 {
                     "type": "Label",
@@ -274,7 +331,6 @@
                             "color": "rgba(255, 255, 255, 1)",
                             "fontSize": 21,
                             "fontStyle": "normal",
-                            "textShadowOffset": {},
                             "letterSpacing": 0,
                             "textDecorationLine": "none",
                             "textDecorationStyle": "solid",
@@ -336,7 +392,6 @@
                             "color": "rgba(0, 0, 0, 1)",
                             "fontSize": 16,
                             "fontStyle": "normal",
-                            "textShadowOffset": {},
                             "letterSpacing": 0,
                             "textDecorationLine": "none",
                             "textDecorationStyle": "solid",
@@ -381,7 +436,7 @@
                     "children": [],
                     "id": "13613efb-5646-4d09-a6f6-241e543265ce",
                     "thunkableVersion": 447,
-                    "name": "Text_Input9"
+                    "name": "EmailInput1"
                 },
                 {
                     "type": "Label",
@@ -406,7 +461,6 @@
                             "color": "rgba(255, 255, 255, 1)",
                             "fontSize": 21,
                             "fontStyle": "normal",
-                            "textShadowOffset": {},
                             "letterSpacing": 0,
                             "textDecorationLine": "none",
                             "textDecorationStyle": "solid",
@@ -480,7 +534,6 @@
                     "color": "rgba(255, 255, 255, 1)",
                     "fontSize": 38,
                     "fontStyle": "normal",
-                    "textShadowOffset": {},
                     "letterSpacing": 0,
                     "textDecorationLine": "none",
                     "textDecorationStyle": "solid",
@@ -527,7 +580,6 @@
             "name": "Sign Up3"
         }
     ],
-    "id": "a4cf7e85-040d-475f-9d90-4e2c3bd88b55",
     "thunkableVersion": 448,
     "bindings": null,
     "name": "Log In"

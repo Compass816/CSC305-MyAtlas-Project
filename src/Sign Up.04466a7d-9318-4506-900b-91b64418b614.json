@@ -40,88 +40,13 @@
         "TabNavigationOptions": {
             "tabBarVisible": true
         },
-        "TabNavigatorIcon": {},
-        "DrawerNavigationOptions": {},
-        "StackNavigationOptions": {
-            "headerStyle": {}
-        },
         "ScreenOrientation": "portrait",
         "DesignerHeight": 667,
         "DesignerWidth": 375,
         "ResponsiveWidth": 375,
-        "isSimple": true,
-        "navigationOptions": {
-            "headerStyle": {}
-        },
-        "tabNavigationOptions": {}
+        "isSimple": true
     },
     "children": [
-        {
-            "type": "Label",
-            "translatedName": "Label",
-            "reactType": "Text",
-            "properties": {
-                "Text": "",
-                "FontSize": 18,
-                "Font": "",
-                "CustomFont": "",
-                "LineHeight": 1,
-                "Color": "rgba(255, 255, 255, 1)",
-                "Height": 45,
-                "Width": 311,
-                "Visible": true,
-                "X": 36,
-                "Y": 620,
-                "RelativeX": 36,
-                "RelativeY": 620,
-                "ResizeMode": "STRETCH",
-                "style": {
-                    "color": "rgba(255, 255, 255, 1)",
-                    "fontSize": 18,
-                    "fontStyle": "normal",
-                    "textShadowOffset": {},
-                    "letterSpacing": 0,
-                    "textDecorationLine": "none",
-                    "textDecorationStyle": "solid",
-                    "textDecorationColor": "rgba(0, 0, 0, 1)",
-                    "writingDirection": "auto",
-                    "marginTop": 0,
-                    "marginBottom": 0,
-                    "marginLeft": 0,
-                    "marginRight": 0,
-                    "paddingTop": 0,
-                    "paddingBottom": 0,
-                    "paddingLeft": 0,
-                    "paddingRight": 0,
-                    "flexWrap": "wrap",
-                    "borderWidth": 0,
-                    "borderRadius": 0,
-                    "borderColor": "rgba(236, 237, 237, 1)",
-                    "borderStyle": "solid",
-                    "shadowColor": "rgba(0, 0, 0, 0)",
-                    "shadowOpacity": 0,
-                    "scaledShadowOpacity": 0,
-                    "shadowRadius": 0,
-                    "shadowOffset": {
-                        "width": 0,
-                        "height": 0
-                    },
-                    "position": "absolute",
-                    "left": "20.133333333333333%",
-                    "top": "84.13605697151424%",
-                    "lineHeight": 1,
-                    "display": "flex"
-                },
-                "ParentId": "04466a7d-9318-4506-900b-91b64418b614",
-                "position": "absolute",
-                "edgeOffsets": 620,
-                "children": ""
-            },
-            "children": [],
-            "id": "b9867e06-2954-49a1-a92f-deb334fbdd0e",
-            "thunkableVersion": 448,
-            "name": "Error Label"
-        },
         {
             "type": "Image",
             "translatedName": "Image",
@@ -158,7 +83,6 @@
                     "top": "8.025674662668665%",
                     "display": "flex"
                 },
-                "capInsets": {},
                 "ParentId": "04466a7d-9318-4506-900b-91b64418b614",
                 "position": "absolute",
                 "edgeOffsets": 9
@@ -197,6 +121,72 @@
                 "resizeMode": "contain"
             },
             "children": [
+                {
+                    "type": "Label",
+                    "translatedName": "Label",
+                    "reactType": "Text",
+                    "properties": {
+                        "Text": "",
+                        "FontSize": 18,
+                        "Font": "",
+                        "CustomFont": "",
+                        "LineHeight": 1,
+                        "Color": "rgba(0, 0, 0, 1)",
+                        "Height": 45,
+                        "Width": 311,
+                        "Visible": true,
+                        "X": 33,
+                        "Y": 535,
+                        "RelativeX": 3,
+                        "RelativeY": 387,
+                        "ResizeMode": "STRETCH",
+                        "style": {
+                            "color": "rgba(0, 0, 0, 1)",
+                            "fontSize": 18,
+                            "fontStyle": "normal",
+                            "textShadowOffset": {},
+                            "letterSpacing": 0,
+                            "textDecorationLine": "none",
+                            "textDecorationStyle": "solid",
+                            "textDecorationColor": "rgba(0, 0, 0, 1)",
+                            "writingDirection": "auto",
+                            "marginTop": 0,
+                            "marginBottom": 0,
+                            "marginLeft": 0,
+                            "marginRight": 0,
+                            "paddingTop": 0,
+                            "paddingBottom": 0,
+                            "paddingLeft": 0,
+                            "paddingRight": 0,
+                            "flexWrap": "wrap",
+                            "borderWidth": 0,
+                            "borderRadius": 0,
+                            "borderColor": "rgba(236, 237, 237, 1)",
+                            "borderStyle": "solid",
+                            "shadowColor": "rgba(0, 0, 0, 0)",
+                            "shadowOpacity": 0,
+                            "scaledShadowOpacity": 0,
+                            "shadowRadius": 0,
+                            "shadowOffset": {
+                                "width": 0,
+                                "height": 0
+                            },
+                            "position": "absolute",
+                            "left": "32.13333333333333%",
+                            "top": "74.87115817091454%",
+                            "lineHeight": 1,
+                            "display": "flex"
+                        },
+                        "ParentId": "04466a7d-9318-4506-900b-91b64418b614",
+                        "position": "absolute",
+                        "edgeOffsets": 535,
+                        "children": ""
+                    },
+                    "children": [],
+                    "id": "8464b6c4-764c-446e-aea0-d73625f69125",
+                    "thunkableVersion": 448,
+                    "name": "ErrorLabel"
+                },
                 {
                     "type": "Button",
                     "translatedName": "Button",
@@ -258,8 +248,8 @@
                     "properties": {
                         "Hint": "Type here",
                         "CustomFont": "",
-                        "Height": 37,
-                        "Width": 311,
+                        "Height": 39,
+                        "Width": 313,
                         "Visible": true,
                         "X": 30,
                         "Y": 368,
@@ -270,7 +260,6 @@
                             "color": "rgba(0, 0, 0, 1)",
                             "fontSize": 16,
                             "fontStyle": "normal",
-                            "textShadowOffset": {},
                             "letterSpacing": 0,
                             "textDecorationLine": "none",
                             "textDecorationStyle": "solid",
@@ -310,12 +299,13 @@
                         "ParentId": "04466a7d-9318-4506-900b-91b64418b614",
                         "position": "absolute",
                         "edgeOffsets": 368,
-                        "placeholder": "Type here"
+                        "placeholder": "Type here",
+                        "secureTextEntry": true
                     },
                     "children": [],
                     "id": "05972867-2a4c-483c-91d9-79ab53ab385e",
                     "thunkableVersion": 447,
-                    "name": "ConfirmInput"
+                    "name": "ConfirmPasswordInput"
                 },
                 {
                     "type": "Label",
@@ -340,7 +330,6 @@
                             "color": "rgba(255, 255, 255, 1)",
                             "fontSize": 21,
                             "fontStyle": "normal",
-                            "textShadowOffset": {},
                             "letterSpacing": 0,
                             "textDecorationLine": "none",
                             "textDecorationStyle": "solid",
@@ -402,7 +391,6 @@
                             "color": "rgba(0, 0, 0, 1)",
                             "fontSize": 16,
                             "fontStyle": "normal",
-                            "textShadowOffset": {},
                             "letterSpacing": 0,
                             "textDecorationLine": "none",
                             "textDecorationStyle": "solid",
@@ -442,7 +430,8 @@
                         "ParentId": "04466a7d-9318-4506-900b-91b64418b614",
                         "position": "absolute",
                         "edgeOffsets": 234,
-                        "placeholder": "Type here"
+                        "placeholder": "Type here",
+                        "secureTextEntry": true
                     },
                     "children": [],
                     "id": "ae6abee0-f8d2-4857-97ac-f9a1fcb45ce1",
@@ -472,7 +461,6 @@
                             "color": "rgba(255, 255, 255, 1)",
                             "fontSize": 21,
                             "fontStyle": "normal",
-                            "textShadowOffset": {},
                             "letterSpacing": 0,
                             "textDecorationLine": "none",
                             "textDecorationStyle": "solid",
@@ -534,7 +522,6 @@
                             "color": "rgba(0, 0, 0, 1)",
                             "fontSize": 16,
                             "fontStyle": "normal",
-                            "textShadowOffset": {},
                             "letterSpacing": 0,
                             "textDecorationLine": "none",
                             "textDecorationStyle": "solid",
@@ -604,7 +591,6 @@
                             "color": "rgba(255, 255, 255, 1)",
                             "fontSize": 21,
                             "fontStyle": "normal",
-                            "textShadowOffset": {},
                             "letterSpacing": 0,
                             "textDecorationLine": "none",
                             "textDecorationStyle": "solid",
@@ -678,7 +664,6 @@
                     "color": "rgba(255, 255, 255, 1)",
                     "fontSize": 38,
                     "fontStyle": "normal",
-                    "textShadowOffset": {},
                     "letterSpacing": 0,
                     "textDecorationLine": "none",
                     "textDecorationStyle": "solid",
