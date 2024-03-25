@@ -21,6 +21,7 @@ community include:
 * Attendance is expected for every meeting
 * Missing a meeting is acceptable only given advance notice and reaching out about missed work or important notes.
 * If you are going to be late for a meeting it is imperative to let the group know via discord.
+* Another important part of meetings is having no phone on your desk or within plain sight
 * Assignments will be made and done through the GitHub project board where someone can volunteer to do a task and try to complete it before the sprint deadline. 
 * Our options of dealing with poorly completed work is leaving comments on the task and it can be explained in the SCRUM meeting as to what is troublesome about the work. 
 * To ensure participation across all team members make sure to ask questions about anything that is hard to understand or if somebody doesn’t seem to have had an opportunity to speak.
