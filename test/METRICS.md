@@ -9,8 +9,8 @@ https://docs.google.com/presentation/d/1FnrasSEg2YHDB0dDhD9bJw4gEFp8Z2L-4RusNTz7
 - Metric 8: Google Analytics     
 - Metric 9: Google Analytics     
 - Metric 10:
-- Metric 11:
-- Metric 12:
+- Metric 11: Google Analytics user lifetime
+- Metric 12: 
 - Metric 13: Google Analytics path exploration
 - Metric 14: Google Analytics user exploration
 - Metric 15: Google Analytics user exploration
