@@ -1,9 +1,9 @@
 https://docs.google.com/presentation/d/1FnrasSEg2YHDB0dDhD9bJw4gEFp8Z2L-4RusNTz7IOs/edit?usp=sharing
-- Metric 1: NPS collected from a screen in our app
-- Metric 2:
-- Metric 3:
-- Metric 4:
-- Metric 5:
+- Metric 1: NPS collected from a screen in our app saved to firebase
+- Metric 2: Google play store reviews
+- Metric 3: Google play store ratings
+- Metric 4: Google Analytics views per page
+- Metric 5: 
 - Metric 6:
 - Metric 7: Google play Store     
 - Metric 8: Google Analytics     
