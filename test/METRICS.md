@@ -11,6 +11,6 @@ https://docs.google.com/presentation/d/1FnrasSEg2YHDB0dDhD9bJw4gEFp8Z2L-4RusNTz7
 - Metric 10:
 - Metric 11:
 - Metric 12:
-- Metric 13:
-- Metric 14:
-- Metric 15:
+- Metric 13: Google Analytics path exploration
+- Metric 14: Google Analytics user exploration
+- Metric 15: Google Analytics user exploration
