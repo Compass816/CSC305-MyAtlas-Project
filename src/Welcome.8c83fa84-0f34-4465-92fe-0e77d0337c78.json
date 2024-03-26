@@ -143,8 +143,8 @@
             "translatedName": "Group",
             "reactType": "ViewWithProps",
             "properties": {
-                "Height": 150,
-                "Width": 315,
+                "Height": 152,
+                "Width": 317,
                 "Visible": true,
                 "X": 28,
                 "Y": 84,
