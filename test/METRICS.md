@@ -3,8 +3,8 @@ https://docs.google.com/presentation/d/1FnrasSEg2YHDB0dDhD9bJw4gEFp8Z2L-4RusNTz7
 - Metric 2: Google play store reviews
 - Metric 3: Google play store ratings
 - Metric 4: Google Analytics views per page
-- Metric 5: 
-- Metric 6:
+- Metric 5: Google Play Ads Click Through Rate
+- Metric 6: Google Analytics of daily users
 - Metric 7: Google play Store     
 - Metric 8: Google Analytics     
 - Metric 9: Google Analytics     
