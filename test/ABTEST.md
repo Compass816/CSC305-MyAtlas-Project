@@ -1,4 +1,4 @@
-A/B Test Name: Photo Gallery Layout Test
+### A/B Test Name: Photo Gallery Layout Test
 
 User Story Number: US10
 
@@ -21,3 +21,27 @@ Variations:
 
 - Control Group: Trip photo galleries displayed in the existing timeline layout.-
 - Experimental Group: Trip photo galleries displayed in a new grid layout with larger thumbnails and a responsive design to accommodate different screen sizes. (Provide mockups and design examples showcasing the new grid layout)
+
+
+### A/B Test Name: Fog of War Grid Size Test
+
+User Story Number: US4
+
+Metric (from the HEART grid): Engagement
+
+Hypothesis: The hypothesis is that changing the grid size of the fog of war feature from the current setup to a grid size of approximately 1/4 mile x 1/4 mile will impact user engagement positively. The problem we aim to solve is that users may find it difficult to explore and navigate within the fog of war area with the current grid setup, potentially leading to frustration and decreased engagement with the location tracking feature. By implementing a finer grid size, users may experience more precise visibility adjustments as they move between saved locations, potentially increasing engagement and satisfaction with the app's location tracking functionality.
+
+Experiment:
+
+- Audience: 50% of randomly selected users will be assigned to the control group, where they will continue to experience the current fog of war grid setup. The other 50% will be assigned to the experimental group, where they will experience the new fog of war grid setup with a grid size of approximately 1/4 mile x 1/4 mile.
+- Firebase Analytics Tracking: Set up event tracking to measure the following metrics:
+  - Number of times users interact with the fog of war feature
+  - Average time spent exploring within the fog of war area
+  - Number of saved locations visited per session
+  - Time spent on the map screen
+  - Time spent between opening consecutive fog of war areas
+- Success Metrics: The success of the experiment will be determined based on an increase in the above-mentioned metrics in the experimental group compared to the control group.
+Variations:
+
+- Control Group: Users experience the fog of war feature with the current grid setup.
+- Experimental Group: Users experience the fog of war feature with a new grid setup with a grid size of approximately 1/4 mile x 1/4 mile. (Provide visual examples showcasing the new fog of war grid setup)
