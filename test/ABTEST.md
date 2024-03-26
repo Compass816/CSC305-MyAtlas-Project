@@ -45,3 +45,21 @@ Variations:
 
 - Control Group: Users experience the fog of war feature with the current grid setup.
 - Experimental Group: Users experience the fog of war feature with a new grid setup with a grid size of approximately 1/4 mile x 1/4 mile. (Provide visual examples showcasing the new fog of war grid setup)
+
+### A/B Test Name: Tracking Coords Test
+
+User Story Number: US5
+
+Metric (From HEART grid): Retention
+
+Hypothesis: We hypothesize that by implementing tracking coordinates for user interactions, we will enhance user engagement and ultimately improve retention rates. Currently, without tracking coordinates, we lack detailed insights into user interactions, making it challenging to optimize the user experience effectively. By incorporating tracking coordinates, we anticipate gaining deeper understanding and consequently improving our ability to tailor the platform to user preferences, thus increasing retention.
+
+Experiment:
+- Test will run for two weeks to gauge how often people use it. 
+- We will divide the audience into two groups, one experimental and one control
+  - Control group will use the the previous feature of just tracking coords with no change.
+  - Experimental will recieve a build that gives exact coordinates and where they have been with markers
+- Firebase Analytics:
+  - Time spent on the map screen
+  - The number of markers placed per mile
+- Success Metrics: the success is determined on if the time spent on the map is higher than that of the build without the additional features of markers.
