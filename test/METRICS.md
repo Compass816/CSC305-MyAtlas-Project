@@ -6,11 +6,11 @@ https://docs.google.com/presentation/d/1FnrasSEg2YHDB0dDhD9bJw4gEFp8Z2L-4RusNTz7
 - Metric 5: Google Play Ads Click Through Rate
 - Metric 6: Google Analytics of daily users
 - Metric 7: Google play Store     
-- Metric 8: Google Analytics     
-- Metric 9: Google Analytics     
-- Metric 10:
+- Metric 8: Google Analytics and Google play store downloads
+- Metric 9: Google Analytics for views and engaement for the new feature
+- Metric 10: Google Analytics view acive numbers of users over a defined time period
 - Metric 11: Google Analytics user lifetime
-- Metric 12: 
+- Metric 12: Google Analytics view acive numbers of users over a defined time period
 - Metric 13: Google Analytics path exploration
 - Metric 14: Google Analytics user exploration
 - Metric 15: Google Analytics user exploration
