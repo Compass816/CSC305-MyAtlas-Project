@@ -65,7 +65,7 @@ Experiment:
 - Success Metrics: the success is determined on if the time spent on the map is higher than that of the build without the additional features of markers.
 
 
-  ###A/B Test Name: Email Confirmation Requirement Test
+### A/B Test Name: Email Confirmation Requirement Test
   
 User Story Number: US2
 
