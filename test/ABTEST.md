@@ -63,3 +63,29 @@ Experiment:
   - Time spent on the map screen
   - The number of markers placed per mile
 - Success Metrics: the success is determined on if the time spent on the map is higher than that of the build without the additional features of markers.
+
+
+  ###A/B Test Name: Email Confirmation Requirement Test
+  
+User Story Number: US2
+
+Metric (from the HEART grid): Retention
+
+Hypothesis:
+The hypothesis is that altering the email confirmation requirement for new users will impact user retention. Currently, new users must confirm their email before gaining access to the app. The problem we aim to solve is potential friction in the onboarding process, as some users might abandon the app before confirming their email. By allowing users to access the app for one day without email confirmation, we anticipate reducing friction in the onboarding process, potentially increasing user retention.
+
+Experiment:
+- Audience: 50% of randomly selected new users will be assigned to the control group, where they must confirm their email before gaining access to the app. The other 50% will be assigned to the experimental group, where they can use the app for one day without confirming their email.
+
+Firebase Analytics Tracking:
+-Time between user registration and email confirmation (for control group)
+-Time spent in the app during the first day (for experimental group)
+-Number of interactions within the app during the first day (for experimental group)
+-Number of users who confirm their email within the first day (for experimental group)
+
+Success Metrics:
+The success of the experiment will be determined based on an increase in user retention metrics in the experimental group compared to the control group.
+
+Variations:
+-Control Group: Users must confirm their email before gaining access to the app.
+-Experimental Group: Users can access the app for one day without confirming their email.
