@@ -83,7 +83,6 @@
                     "top": "8.025674662668665%",
                     "display": "flex"
                 },
-                "capInsets": {},
                 "ParentId": "04466a7d-9318-4506-900b-91b64418b614",
                 "position": "absolute",
                 "edgeOffsets": 1
@@ -146,7 +145,6 @@
                             "color": "rgba(0, 0, 0, 1)",
                             "fontSize": 18,
                             "fontStyle": "normal",
-                            "textShadowOffset": {},
                             "letterSpacing": 0,
                             "textDecorationLine": "none",
                             "textDecorationStyle": "solid",

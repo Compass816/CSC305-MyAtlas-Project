@@ -344,13 +344,13 @@
                 "Latitude": 37.78,
                 "Longitude": -122.4,
                 "Zoom": 0,
-                "Height": 608,
-                "Width": 374,
+                "Height": 610,
+                "Width": 376,
                 "Visible": true,
-                "X": 0.6666666865348816,
-                "Y": 0.6666666865348816,
-                "RelativeX": 0.6666666865348816,
-                "RelativeY": 0.6666666865348816,
+                "X": 1,
+                "Y": 1.2689392566680908,
+                "RelativeX": 1,
+                "RelativeY": 1.2689392566680908,
                 "ResizeMode": "STRETCH",
                 "style": {
                     "marginTop": 0,
@@ -391,11 +391,9 @@
                     "latitudeDelta": 0.09,
                     "longitudeDelta": 0.04
                 },
-                "initialRegion": {},
-                "legalLabelInsets": {},
                 "ParentId": "06028a38-f9c7-4ca2-87c9-7242635840d6",
                 "position": "absolute",
-                "edgeOffsets": 0.6666666865348816
+                "edgeOffsets": 1.2689392566680908
             },
             "children": [],
             "id": "c37ecc80-7e3f-4d96-a908-ca5976d988bf",
