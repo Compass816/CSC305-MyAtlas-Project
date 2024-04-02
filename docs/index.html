@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="firebaseConfig.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <div id="background"></div>
+        <div id="sun" class="celestial-body"></div>
+        <div id="moon" class="celestial-body"></div>
+        <button id="timelapse" style="position: absolute; top: 10px; left: 10px;">Start Time-lapse</button>
+        <div id="time"></div>
+        <div id="cloud1" class="cloud"></div>
+        <div id="cloud2" class="cloud"></div>
+        <div id="cloud3" class="cloud"></div>
+        <div id="star1" class="star"></div>
+        <div id="star2" class="star"></div>
+        <div id="star3" class="star"></div>
+        <div id="star4" class="star"></div>
+        <div id="star5" class="star"></div>
+        <div id="star6" class="star"></div>
+        <div id="mountain"></div>
+    </div>
+    <script>
+        let virtualTime;
+
+        function calculatePosition(time) {
+            const hours = (time.getHours() + time.getMinutes() / 60) % 24;
+            const baseHour = hours % 12;
+            return (baseHour < 6) ? (1 - baseHour / 6) * 100 : ((baseHour - 6) / 6) * 100;
+        }
+
+        function getCelestialBody(time) {
+            const hours = time.getHours() + time.getMinutes() / 60;
+            return (hours >= 6 && hours < 18) ? 'sun' : 'moon';
+        }
+
+        function updateBackground(time) {
+            const hours = time.getHours();
+            const minutes = time.getMinutes();
+            const background = document.getElementById('background');
+            const stars = document.getElementsByClassName('star');
+
+            if (hours >= 17 && hours < 18) {
+                // Fade out from 5pm to 6pm
+                const percentage = (minutes / 60);
+                background.style.opacity = 1 - percentage;
+                for (let i = 0; i < stars.length; i++) {
+                    stars[i].style.opacity = 1 - percentage;
+                }
+            } else if (hours >= 5 && hours < 6) {
+                // Fade in from 5am to 6am
+                const percentage = (minutes / 60);
+                background.style.opacity = percentage;
+                for (let i = 0; i < stars.length; i++) {
+                    stars[i].style.opacity = percentage;
+                }
+            } else if (hours >= 6 && hours < 17) {
+                // Fully visible during the day
+                background.style.opacity = 1;
+                for (let i = 0; i < stars.length; i++) {
+                    stars[i].style.opacity = 0;
+                }
+            } else {
+                // Fully transparent during the night
+                background.style.opacity = 0;
+                for (let i = 0; i < stars.length; i++) {
+                    stars[i].style.opacity = 1;
+                }
+            }
+        }
+
+        function updateMountain(time) {
+            const hours = time.getHours();
+            const minutes = time.getMinutes();
+            const mountain = document.getElementById('mountain');
+            if (hours < 6 || hours >= 18) {
+                mountain.style.background = 'radial-gradient(circle at 50% 0%, #532D6C, #532D6C)';
+            } else {
+                const startColor = [83, 45, 108]; // RGB for #532D6C
+                const endColor = [255, 69, 0]; // RGB for #FF4500
+                const percentage = (hours - 6 + minutes / 60) / 6; // Percentage of sun's rise
+                const color = startColor.map((start, i) => Math.round(start + percentage * (endColor[i] - start))).join(', ');
+                mountain.style.background = `radial-gradient(circle at 50% 0%, rgb(${color}), #532D6C)`;
+            }
+        }
+
+        function updatePosition(virtual = false) {
+            const time = virtual ? virtualTime : new Date();
+            const position = calculatePosition(time);
+            const celestialBody = getCelestialBody(time);
+
+            if (celestialBody === 'sun') {
+                sun.style.bottom = `${position}%`;
+                sun.style.display = 'block';
+                moon.style.display = 'none';
+            } else {
+                moon.style.bottom = `${position}%`;
+                moon.style.display = 'block';
+                sun.style.display = 'none';
+            }
+
+            updateBackground(time);
+
+            if (virtual) {
+                virtualTime.setMinutes(virtualTime.getMinutes() + 1); // Advance time by 1 minute
+            }
+
+            document.getElementById('time').textContent = time.toLocaleTimeString(); // Display the current time
+            updateMountain(time);
+
+            console.log(time, position);
+        }
+
+        let intervalId = setInterval(() => updatePosition(), 1000); // Update position every second
+
+        document.getElementById('timelapse').addEventListener('click', function () {
+            clearInterval(intervalId); // Clear the original interval
+            virtualTime = new Date();
+            virtualTime.setHours(6, 0, 0, 0); // Start at 6am
+            intervalId = setInterval(() => updatePosition(true), 100); // Start the time-lapse
+        });
+    </script>
+</body>
+
+</html>
