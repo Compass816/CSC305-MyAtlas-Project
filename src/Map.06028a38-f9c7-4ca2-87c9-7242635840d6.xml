@@ -1,1 +1,606 @@
-<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="cOD7!5yy|yOi3L4wbd;.">j</variable></variables><block type="component_event" id="=i:p5Akt`.+6E6Zj@wO." x="-3" y="-59"><mutation xmlns="http://www.w3.org/1999/xhtml" component_id="06028a38-f9c7-4ca2-87c9-7242635840d6" component_name="Map" component_type="Screen" parent_id="undefined" event_id="Starts" was_updated="true"/><field name="component_id">06028a38-f9c7-4ca2-87c9-7242635840d6</field><field name="event_id">Starts</field><statement name="input_do"><block type="controls_forEach" id="h6f$CB;vhl`@b91SnsZg"><field name="VAR" id="cOD7!5yy|yOi3L4wbd;.">j</field><value name="LIST"><block type="variables_get_dynamic" id="Y%P,:y%|$b5Lg-^!nUbp"><field name="SCOPE">CLOUD</field><value name="NAME"><shadow type="text" id="heWlZy+K_mCpb=EsPb{%"><field name="TEXT">name</field></shadow><block type="text_join" id="a^cn1vSW=VA^YXT[{.%6"><mutation items="2"/><value name="ADD0"><block type="variables_get" id="PNuVx/~xzN`AM6J,V%5R"><mutation xmlns="http://www.w3.org/1999/xhtml" saved_name="app variable userID"/><field name="VAR">f1725fbe-2b54-4de7-b810-bb13dc99a163</field></block></value><value name="ADD1"><block type="text" id="b7,_f|ZHK@}$[^j*D-/]"><field name="TEXT">/coordinates</field></block></value></block></value></block></value><statement name="DO"><block type="lists_setIndex" id="J^kj@jtzz,(Z2lwdH[oi"><mutation at="false"/><field name="MODE">INSERT</field><field name="WHERE">LAST</field><value name="LIST"><block type="variables_get" id=".PXuLJer?{z%Sq6L,NPA"><mutation xmlns="http://www.w3.org/1999/xhtml" saved_name="app variable loc_points"/><field name="VAR">e6100dc4-a104-406d-921a-f4bd677651c1</field></block></value><value name="TO"><shadow type="text" id="R[5:wTU:xv8yh~q}i`MP"><field name="TEXT">abc</field></shadow><block type="variables_get" id="#n]I!jw_^a?43J@@.6#F"><mutation xmlns="http://www.w3.org/1999/xhtml" saved_name="j"/><field name="VAR" id="cOD7!5yy|yOi3L4wbd;.">j</field></block></value></block></statement><next><block type="controls_if" id="P0O$|r2u`7eg|4mX^1uE"><value name="IF0"><block type="logic_compare" id="HERgel]nm|t.Iv]d9IA6"><field name="OP">GT</field><value name="A"><block type="lists_length" id="fIBIYRvtIT,c[u}DY,r)"><value name="VALUE"><block type="variables_get" id="$fh?P^FH@/rdRZEl.Pqm"><mutation xmlns="http://www.w3.org/1999/xhtml" saved_name="app variable loc_points"/><field name="VAR">e6100dc4-a104-406d-921a-f4bd677651c1</field></block></value></block></value><value name="B"><block type="math_number" id="|W^*]6rNgco!`p1JPv}-"><field name="NUM">1</field></block></value></block></value><statement name="DO0"><block type="caller" id="|GAqglvu:T{0I}5Zn}$S" inline="false"><mutation xmlns="http://www.w3.org/1999/xhtml" component_name="Map1" component_id="c37ecc80-7e3f-4d96-a908-ca5976d988bf" component_type="Map" function_name="addPolyline" was_updated="true"/><field name="component_id">c37ecc80-7e3f-4d96-a908-ca5976d988bf</field><field name="function_name">addPolyline</field><value name="arg0"><block type="variables_get" id="[yo9Rgr$G[.E?5mdj+@S"><mutation xmlns="http://www.w3.org/1999/xhtml" saved_name="app variable loc_points"/><field name="VAR">e6100dc4-a104-406d-921a-f4bd677651c1</field></block></value><value name="arg1"><shadow type="math_number" id="X%;}qvnq;X_E3]FuRbr`"><field name="NUM">3</field></shadow><block type="variables_get" id="h$!BEZQaT%82dr*u_EEl"><mutation xmlns="http://www.w3.org/1999/xhtml" saved_name="app variable line_width"/><field name="VAR">c8ab46ee-d641-4d3a-8e79-f782d55de583</field></block></value><value name="arg2"><shadow type="text" id="ffr}sM/475NTgCO{e?Z)"><field name="TEXT"/></shadow><block type="variables_get" id="(zH5AL,R,KnMp0Q:1=d%"><mutation xmlns="http://www.w3.org/1999/xhtml" saved_name="app variable line_color"/><field name="VAR">11e62f15-95f6-4a55-b834-13b2bb1982aa</field></block></value></block></statement></block></next></block></statement></block><block type="variables_def" id="#pXuYLMrnzssARG3D.UJ" x="3" y="277"><mutation xmlns="http://www.w3.org/1999/xhtml" no_input="false" variable_uuid="e6100dc4-a104-406d-921a-f4bd677651c1" variable_name="loc_points" variable_scope="APP"/><field name="SCOPE">APP</field><field name="NAME">loc_points</field><value name="VALUE"><block type="lists_create_empty" id="];nF:,2C-h_)ERhGk#Rq"/></value></block><block type="variables_def" id="K}qz:5t|Sd5-6fY(9+DF" x="4" y="310"><mutation xmlns="http://www.w3.org/1999/xhtml" no_input="false" variable_uuid="c8ab46ee-d641-4d3a-8e79-f782d55de583" variable_name="line_width" variable_scope="APP"/><field name="SCOPE">APP</field><field name="NAME">line_width</field><value name="VALUE"><block type="math_number" id="WpSW`-^y@*g.f9kMAHv*"><field name="NUM">3</field></block></value></block><block type="variables_def" id="RsiS6RF)D{E+1dKUA.x*" x="0" y="339"><mutation xmlns="http://www.w3.org/1999/xhtml" no_input="false" variable_uuid="11e62f15-95f6-4a55-b834-13b2bb1982aa" variable_name="line_color" variable_scope="APP"/><field name="SCOPE">APP</field><field name="NAME">line_color</field><value name="VALUE"><block type="colour_picker" id="w*+S{T$X*[ZA+wmE8Dhm"><field name="COLOUR">#ff0000</field></block></value></block><block type="component_event" id="zpgmw8r,/v-tQ#9$r_Ib" x="0" y="389"><mutation xmlns="http://www.w3.org/1999/xhtml" component_id="06028a38-f9c7-4ca2-87c9-7242635840d6" component_name="Map" component_type="Screen" parent_id="undefined" event_id="Opens" was_updated="true"/><field name="component_id">06028a38-f9c7-4ca2-87c9-7242635840d6</field><field name="event_id">Opens</field><statement name="input_do"><block type="setter" id="!zJ;7Z-kJzq{9fY*@kLH"><mutation xmlns="http://www.w3.org/1999/xhtml" component_name="Container1"/><field name="component_id">a563a483-70e4-4bc6-b34b-b05ffef3acd5</field><field name="field_name">BackgroundColor</field><value name="field_value"><shadow type="colour_picker" id="I1Z%s|GieF{Na19V}*^h"><field name="COLOUR">#000000</field></shadow><block type="variables_get" id="KpzQr6;KudjY1]Yv`K?{"><mutation xmlns="http://www.w3.org/1999/xhtml" saved_name="app variable app_color"/><field name="VAR">12ad059a-0bbd-45c0-8d1d-ca44732b9e89</field></block></value></block></statement></block><block type="component_event" id="Zc-2Sm5**~E;etJsUwsX" x="0" y="478"><mutation xmlns="http://www.w3.org/1999/xhtml" component_id="1fe5bf1e-0f36-4a4a-957d-e0f43dacd040" component_name="CameraIcon" component_type="Image" parent_id="undefined" event_id="Click" was_updated="true"/><field name="component_id">1fe5bf1e-0f36-4a4a-957d-e0f43dacd040</field><field name="event_id">Click</field><statement name="input_do"><block type="controls_navigate_new" id="L./MVvvsU*lEt(se}$H%"><value name="COMPONENT"><shadow type="any_component_component_dropdown" id="cZ,:U1k~oyAj]p`^dcTC"><mutation xmlns="http://www.w3.org/1999/xhtml" component_id="Camera" component_types_to_include="[&quot;Screen&quot;]"/><field name="component_id">a8843067-b0cc-4362-81bb-e50742a3fbca</field></shadow></value></block></statement></block><block type="component_event" id="v57G~1f^@H;JtBLDBx8N" x="1" y="559"><mutation xmlns="http://www.w3.org/1999/xhtml" component_id="c37ecc80-7e3f-4d96-a908-ca5976d988bf" component_name="Map1" component_type="Map" parent_id="undefined" event_id="onMapReady" was_updated="true"/><field name="component_id">c37ecc80-7e3f-4d96-a908-ca5976d988bf</field><field name="event_id">onMapReady</field><statement name="input_do"><block type="location_get_current_location" id="!%NbvV%[t[T7^X2|1rJh"><mutation xmlns="http://www.w3.org/1999/xhtml" show_callback_params="true" callback_params_added="true"/><value name="CALLBACK_PARAM0"><block type="callback_arg" id="=oTNv=OYw9q6qTfVn5aJ"><mutation xmlns="http://www.w3.org/1999/xhtml" tooltip="" language_neutral_name="latitude" arg_name_trans_key="blocks.location.get_current_location.latitude" old_arg_name="latitude"/></block></value><value name="CALLBACK_PARAM1"><block type="callback_arg" id="=(/@b7?9%X+T(o;iXIFC"><mutation xmlns="http://www.w3.org/1999/xhtml" tooltip="" language_neutral_name="longitude" arg_name_trans_key="blocks.location.get_current_location.longitude" old_arg_name="longitude"/></block></value><value name="CALLBACK_PARAM2"><block type="callback_arg" id=":-RG`bUhssr+asiK20*."><mutation xmlns="http://www.w3.org/1999/xhtml" tooltip="" language_neutral_name="location" arg_name_trans_key="blocks.location.get_current_location.location" old_arg_name="location"/></block></value><value name="CALLBACK_PARAM3"><block type="callback_arg" id="?5=If]?*}!))aTw%afy~"><mutation xmlns="http://www.w3.org/1999/xhtml" tooltip="" language_neutral_name="error" arg_name_trans_key="blocks.location.error" old_arg_name="error"/></block></value><statement name="DO"><block type="setter" id="RFAKhr[7V0#NxNIi9eO/"><mutation xmlns="http://www.w3.org/1999/xhtml" component_name="Map1"/><field name="component_id">c37ecc80-7e3f-4d96-a908-ca5976d988bf</field><field name="field_name">Latitude</field><value name="field_value"><shadow type="math_number" id="AnpRuk.E6EP:N~K^35e:"><field name="NUM">37.78</field></shadow><block type="callback_arg" id="S~ArzNMR3-n8x$m%SOs]"><mutation xmlns="http://www.w3.org/1999/xhtml" tooltip="" language_neutral_name="latitude" arg_name_trans_key="blocks.location.get_current_location.latitude" old_arg_name="latitude" is_detached_parameter="true"/></block></value><next><block type="setter" id="s:N^[]FPJ~kf_)i3[(DP"><mutation xmlns="http://www.w3.org/1999/xhtml" component_name="Map1"/><field name="component_id">c37ecc80-7e3f-4d96-a908-ca5976d988bf</field><field name="field_name">Longitude</field><value name="field_value"><shadow type="math_number" id="~?N,T:,~T]Y)zz/$vN{Y"><field name="NUM">-122.4</field></shadow><block type="callback_arg" id="FY.y]RPW=iBNZ|Wc.`g8"><mutation xmlns="http://www.w3.org/1999/xhtml" tooltip="" language_neutral_name="longitude" arg_name_trans_key="blocks.location.get_current_location.longitude" old_arg_name="longitude" is_detached_parameter="true"/></block></value></block></next></block></statement></block></statement></block><block type="procedures_defnoreturn" id="e++SgozA(U2%B)ZL{q^b" x="10" y="955"><field name="NAME">add_new_point_to_line</field><comment pinned="false" h="80" w="160">Describe this function...</comment></block><block type="caller" id="atGAsA5QJa@v;OEKuM`#" inline="false" disabled="true" x="398" y="954"><mutation xmlns="http://www.w3.org/1999/xhtml" component_name="Map1" component_id="c37ecc80-7e3f-4d96-a908-ca5976d988bf" component_type="Map" function_name="addPolyline" was_updated="true"/><field name="component_id">c37ecc80-7e3f-4d96-a908-ca5976d988bf</field><field name="function_name">addPolyline</field><value name="arg0"><block type="lists_getSublist" id="))b#*s!WR5?km7sjcCuk"><mutation at1="true" at2="false"/><field name="WHERE1">FROM_END</field><field name="WHERE2">LAST</field><value name="LIST"><block type="variables_get" id="|rTZRccr_{{5DFu_8wtF"><mutation xmlns="http://www.w3.org/1999/xhtml" saved_name="app variable loc_points"/><field name="VAR">e6100dc4-a104-406d-921a-f4bd677651c1</field></block></value><value name="AT1"><shadow type="math_number" id="3n=Nk`91qL_0eE|IqXNJ"><field name="NUM">3</field></shadow></value></block></value><value name="arg1"><shadow type="math_number" id="n^pFSQ$.jAjN!!hrPR[%"><field name="NUM">3</field></shadow><block type="variables_get" id="rsc2xNbG@~qcmpHb+j@!"><mutation xmlns="http://www.w3.org/1999/xhtml" saved_name="app variable line_width"/><field name="VAR">c8ab46ee-d641-4d3a-8e79-f782d55de583</field></block></value><value name="arg2"><shadow type="text" id="ffr}sM/475NTgCO{e?Z)"><field name="TEXT"/></shadow><block type="variables_get" id="ti`dk$2qfi^+dOXMXTKn"><mutation xmlns="http://www.w3.org/1999/xhtml" saved_name="app variable line_color"/><field name="VAR">11e62f15-95f6-4a55-b834-13b2bb1982aa</field></block></value></block><block type="component_event" id="WUH7+Fp$X/ii=n^_hbwK" x="0" y="1119"><mutation xmlns="http://www.w3.org/1999/xhtml" component_id="6a061b70-3848-4501-a07f-bd53fd74d617" component_name="GalleryIcon" component_type="Image" parent_id="undefined" event_id="Click" was_updated="true"/><field name="component_id">6a061b70-3848-4501-a07f-bd53fd74d617</field><field name="event_id">Click</field><statement name="input_do"><block type="controls_navigate_new" id="s*Yo0TKq|$!_ybs2{510"><value name="COMPONENT"><shadow type="any_component_component_dropdown" id="Oj+Rm5?TFQHQ_h`=!OwK"><mutation xmlns="http://www.w3.org/1999/xhtml" component_id="Gallery" component_types_to_include="[&quot;Screen&quot;]"/><field name="component_id">f2a5151e-bc0b-4c6f-b4d6-2cf44963f8b9</field></shadow></value></block></statement></block><block type="component_event" id=")uy1=*W1c#;/G%-uMO#$" x="0" y="1219"><mutation xmlns="http://www.w3.org/1999/xhtml" component_id="cb707565-3410-47a8-a74b-866173cc3d20" component_name="MapIcon" component_type="Image" parent_id="undefined" event_id="Click" was_updated="true"/><field name="component_id">cb707565-3410-47a8-a74b-866173cc3d20</field><field name="event_id">Click</field><statement name="input_do"><block type="controls_navigate_new" id="?/x#UO67;]8Y6fImBMuI"><value name="COMPONENT"><shadow type="any_component_component_dropdown" id="eXi_YZG`;?|t[DPDlc=E"><mutation xmlns="http://www.w3.org/1999/xhtml" component_id="Map" component_types_to_include="[&quot;Screen&quot;]"/><field name="component_id">06028a38-f9c7-4ca2-87c9-7242635840d6</field></shadow></value></block></statement></block><block type="component_event" id="`k7MBd}8g6451]b;ddqN" x="0" y="1319"><mutation xmlns="http://www.w3.org/1999/xhtml" component_id="6ffeeeee-f3b5-421c-b479-fcdc77c2d6d6" component_name="ProfileIcon" component_type="Image" parent_id="undefined" event_id="Click" was_updated="true"/><field name="component_id">6ffeeeee-f3b5-421c-b479-fcdc77c2d6d6</field><field name="event_id">Click</field><statement name="input_do"><block type="controls_navigate_new" id="pfsMza#SZ`1Xz+Otk?c,"><value name="COMPONENT"><shadow type="any_component_component_dropdown" id="l,O(.ID1U5I?Rq||l7#["><mutation xmlns="http://www.w3.org/1999/xhtml" component_id="Profile" component_types_to_include="[&quot;Screen&quot;]"/><field name="component_id">570fd745-230f-4980-b826-5589907e6dc5</field></shadow></value></block></statement></block></xml>
+<xml xmlns="https://developers.google.com/blockly/xml">
+    <variables>
+        <variable id="cOD7!5yy|yOi3L4wbd;.">j</variable>
+    </variables>
+    <block type="component_event" id="=i:p5Akt`.+6E6Zj@wO." x="-3" y="-59">
+        <mutation xmlns="http://www.w3.org/1999/xhtml"
+            component_id="06028a38-f9c7-4ca2-87c9-7242635840d6" component_name="Map"
+            component_type="Screen" parent_id="undefined" event_id="Starts" was_updated="true" />
+        <field name="component_id">06028a38-f9c7-4ca2-87c9-7242635840d6</field>
+        <field name="event_id">Starts</field>
+        <statement name="input_do">
+            <block type="controls_forEach" id="h6f$CB;vhl`@b91SnsZg">
+                <field name="VAR" id="cOD7!5yy|yOi3L4wbd;.">j</field>
+                <value name="LIST">
+                    <block type="variables_get_dynamic" id="Y%P,:y%|$b5Lg-^!nUbp">
+                        <field name="SCOPE">CLOUD</field>
+                        <value name="NAME">
+                            <shadow type="text" id="heWlZy+K_mCpb=EsPb{%">
+                                <field name="TEXT">name</field>
+                            </shadow>
+                            <block type="text_join" id="a^cn1vSW=VA^YXT[{.%6">
+                                <mutation items="2" />
+                                <value name="ADD0">
+                                    <block type="variables_get" id="PNuVx/~xzN`AM6J,V%5R">
+                                        <mutation xmlns="http://www.w3.org/1999/xhtml"
+                                            saved_name="app variable userID" />
+                                        <field name="VAR">f1725fbe-2b54-4de7-b810-bb13dc99a163</field>
+                                    </block>
+                                </value>
+                                <value name="ADD1">
+                                    <block type="text" id="b7,_f|ZHK@}$[^j*D-/]">
+                                        <field name="TEXT">/coordinates</field>
+                                    </block>
+                                </value>
+                            </block>
+                        </value>
+                    </block>
+                </value>
+                <statement name="DO">
+                    <block type="lists_setIndex" id="J^kj@jtzz,(Z2lwdH[oi">
+                        <mutation at="false" />
+                        <field name="MODE">INSERT</field>
+                        <field name="WHERE">LAST</field>
+                        <value name="LIST">
+                            <block type="variables_get" id=".PXuLJer?{z%Sq6L,NPA">
+                                <mutation xmlns="http://www.w3.org/1999/xhtml"
+                                    saved_name="app variable loc_points" />
+                                <field name="VAR">e6100dc4-a104-406d-921a-f4bd677651c1</field>
+                            </block>
+                        </value>
+                        <value name="TO">
+                            <shadow type="text" id="R[5:wTU:xv8yh~q}i`MP">
+                                <field name="TEXT">abc</field>
+                            </shadow>
+                            <block type="variables_get" id="#n]I!jw_^a?43J@@.6#F">
+                                <mutation xmlns="http://www.w3.org/1999/xhtml" saved_name="j" />
+                                <field name="VAR" id="cOD7!5yy|yOi3L4wbd;.">j</field>
+                            </block>
+                        </value>
+                    </block>
+                </statement>
+                <next>
+                    <block type="controls_if" id="P0O$|r2u`7eg|4mX^1uE">
+                        <value name="IF0">
+                            <block type="logic_compare" id="HERgel]nm|t.Iv]d9IA6">
+                                <field name="OP">GT</field>
+                                <value name="A">
+                                    <block type="lists_length" id="fIBIYRvtIT,c[u}DY,r)">
+                                        <value name="VALUE">
+                                            <block type="variables_get" id="$fh?P^FH@/rdRZEl.Pqm">
+                                                <mutation xmlns="http://www.w3.org/1999/xhtml"
+                                                    saved_name="app variable loc_points" />
+                                                <field name="VAR">
+                                                    e6100dc4-a104-406d-921a-f4bd677651c1</field>
+                                            </block>
+                                        </value>
+                                    </block>
+                                </value>
+                                <value name="B">
+                                    <block type="math_number" id="|W^*]6rNgco!`p1JPv}-">
+                                        <field name="NUM">1</field>
+                                    </block>
+                                </value>
+                            </block>
+                        </value>
+                        <statement name="DO0">
+                            <block type="caller" id="|GAqglvu:T{0I}5Zn}$S" inline="false">
+                                <mutation xmlns="http://www.w3.org/1999/xhtml" component_name="Map1"
+                                    component_id="c37ecc80-7e3f-4d96-a908-ca5976d988bf"
+                                    component_type="Map" function_name="addPolyline"
+                                    was_updated="true" />
+                                <field name="component_id">c37ecc80-7e3f-4d96-a908-ca5976d988bf</field>
+                                <field name="function_name">addPolyline</field>
+                                <value name="arg0">
+                                    <block type="variables_get" id="[yo9Rgr$G[.E?5mdj+@S">
+                                        <mutation xmlns="http://www.w3.org/1999/xhtml"
+                                            saved_name="app variable loc_points" />
+                                        <field name="VAR">e6100dc4-a104-406d-921a-f4bd677651c1</field>
+                                    </block>
+                                </value>
+                                <value name="arg1">
+                                    <shadow type="math_number" id="X%;}qvnq;X_E3]FuRbr`">
+                                        <field name="NUM">3</field>
+                                    </shadow>
+                                    <block type="variables_get" id="h$!BEZQaT%82dr*u_EEl">
+                                        <mutation xmlns="http://www.w3.org/1999/xhtml"
+                                            saved_name="app variable line_width" />
+                                        <field name="VAR">c8ab46ee-d641-4d3a-8e79-f782d55de583</field>
+                                    </block>
+                                </value>
+                                <value name="arg2">
+                                    <shadow type="text" id="ffr}sM/475NTgCO{e?Z)">
+                                        <field name="TEXT" />
+                                    </shadow>
+                                    <block type="variables_get" id="(zH5AL,R,KnMp0Q:1=d%">
+                                        <mutation xmlns="http://www.w3.org/1999/xhtml"
+                                            saved_name="app variable line_color" />
+                                        <field name="VAR">11e62f15-95f6-4a55-b834-13b2bb1982aa</field>
+                                    </block>
+                                </value>
+                            </block>
+                        </statement>
+                    </block>
+                </next>
+            </block>
+        </statement>
+    </block>
+    <block type="variables_def" id="#pXuYLMrnzssARG3D.UJ" x="3" y="277">
+        <mutation xmlns="http://www.w3.org/1999/xhtml" no_input="false"
+            variable_uuid="e6100dc4-a104-406d-921a-f4bd677651c1" variable_name="loc_points"
+            variable_scope="APP" />
+        <field name="SCOPE">APP</field>
+        <field name="NAME">loc_points</field>
+        <value name="VALUE">
+            <block type="lists_create_empty" id="];nF:,2C-h_)ERhGk#Rq" />
+        </value>
+    </block>
+    <block type="variables_def" id="K}qz:5t|Sd5-6fY(9+DF" x="4" y="310">
+        <mutation xmlns="http://www.w3.org/1999/xhtml" no_input="false"
+            variable_uuid="c8ab46ee-d641-4d3a-8e79-f782d55de583" variable_name="line_width"
+            variable_scope="APP" />
+        <field name="SCOPE">APP</field>
+        <field name="NAME">line_width</field>
+        <value name="VALUE">
+            <block type="math_number" id="WpSW`-^y@*g.f9kMAHv*">
+                <field name="NUM">3</field>
+            </block>
+        </value>
+    </block>
+    <block type="variables_def" id="RsiS6RF)D{E+1dKUA.x*" x="0" y="339">
+        <mutation xmlns="http://www.w3.org/1999/xhtml" no_input="false"
+            variable_uuid="11e62f15-95f6-4a55-b834-13b2bb1982aa" variable_name="line_color"
+            variable_scope="APP" />
+        <field name="SCOPE">APP</field>
+        <field name="NAME">line_color</field>
+        <value name="VALUE">
+            <block type="colour_picker" id="w*+S{T$X*[ZA+wmE8Dhm">
+                <field name="COLOUR">#ff0000</field>
+            </block>
+        </value>
+    </block>
+    <block type="component_event" id="zpgmw8r,/v-tQ#9$r_Ib" x="90" y="62">
+        <mutation xmlns="http://www.w3.org/1999/xhtml"
+            component_id="06028a38-f9c7-4ca2-87c9-7242635840d6" component_name="Map"
+            component_type="Screen" parent_id="undefined" event_id="Opens" was_updated="true" />
+        <field name="component_id">06028a38-f9c7-4ca2-87c9-7242635840d6</field>
+        <field name="event_id">Opens</field>
+        <statement name="input_do">
+            <block type="controls_if" id="A4-hwj@]U0FPt!Nde@fs">
+                <mutation else="1" />
+                <value name="IF0">
+                    <block type="logic_compare" id="z{sI}_yIWHu//nWyYM^@">
+                        <field name="OP">EQ</field>
+                        <value name="A">
+                            <block type="variables_get_dynamic" id="GsP3JGXD6HB:dQ{RzM]/">
+                                <field name="SCOPE">CLOUD</field>
+                                <value name="NAME">
+                                    <shadow type="text" id="wlh.*E4uY|}m@6w2$]7G">
+                                        <field name="TEXT">name</field>
+                                    </shadow>
+                                    <block type="variables_get" id="2`T]~pWsmLYR~FA$R#@!">
+                                        <mutation xmlns="http://www.w3.org/1999/xhtml"
+                                            saved_name="app variable userID" />
+                                        <field name="VAR">f1725fbe-2b54-4de7-b810-bb13dc99a163</field>
+                                    </block>
+                                </value>
+                            </block>
+                        </value>
+                        <value name="B">
+                            <block type="logic_null" id="=+_/8`f*tiHNi,gl?/)_" />
+                        </value>
+                    </block>
+                </value>
+                <statement name="DO0">
+                    <block type="variables_set_dynamic" id="FNyU0^P{;rohj4f4sx-w">
+                        <field name="SCOPE">CLOUD</field>
+                        <value name="NAME">
+                            <shadow type="text" id="Tx9s!/j).=yC?FB5#e}N">
+                                <field name="TEXT">name</field>
+                            </shadow>
+                            <block type="variables_get" id="kA0Ek99?3$Npvo%gjTX|">
+                                <mutation xmlns="http://www.w3.org/1999/xhtml"
+                                    saved_name="app variable userID" />
+                                <field name="VAR">f1725fbe-2b54-4de7-b810-bb13dc99a163</field>
+                            </block>
+                        </value>
+                        <value name="VALUE">
+                            <block type="object_create" id="wN$Qqy=bMugjvjy_!Iyf">
+                                <mutation xmlns="http://www.w3.org/1999/xhtml" num_fields="3">
+                                    <field name="name" />
+                                    <field name="bio" />
+                                    <field name="image" />
+                                </mutation>
+                                <field name="field1">name</field>
+                                <field name="field2">bio</field>
+                                <field name="field3">image</field>
+                                <value name="field_input1">
+                                    <block type="text" id="))LgQvG1r.!bi(9W`?Sa">
+                                        <field name="TEXT">S</field>
+                                    </block>
+                                </value>
+                                <value name="field_input2">
+                                    <block type="text" id="H~p?/P;pnjYqg%!|4#rG">
+                                        <field name="TEXT">S</field>
+                                    </block>
+                                </value>
+                                <value name="field_input3">
+                                    <block type="text" id="0=N{nyAJe(.+mdSDrP]J">
+                                        <field name="TEXT">S</field>
+                                    </block>
+                                </value>
+                            </block>
+                        </value>
+                    </block>
+                </statement>
+                <statement name="ELSE">
+                    <block type="location_get_current_location" id="b)ZAc7dafbpjWCh!@lWQ">
+                        <mutation xmlns="http://www.w3.org/1999/xhtml" show_callback_params="true"
+                            callback_params_added="true" />
+                        <value name="CALLBACK_PARAM0">
+                            <block type="callback_arg" id="j=-?N}/n9ds_P6R|PY|V">
+                                <mutation xmlns="http://www.w3.org/1999/xhtml" tooltip=""
+                                    language_neutral_name="latitude"
+                                    arg_name_trans_key="blocks.location.get_current_location.latitude"
+                                    old_arg_name="latitude" />
+                            </block>
+                        </value>
+                        <value name="CALLBACK_PARAM1">
+                            <block type="callback_arg" id="Rg^t!/6Rc$pQo$Wm6[-Y">
+                                <mutation xmlns="http://www.w3.org/1999/xhtml" tooltip=""
+                                    language_neutral_name="longitude"
+                                    arg_name_trans_key="blocks.location.get_current_location.longitude"
+                                    old_arg_name="longitude" />
+                            </block>
+                        </value>
+                        <value name="CALLBACK_PARAM2">
+                            <block type="callback_arg" id="UI`AE*JP=4_qKT4mlAt+">
+                                <mutation xmlns="http://www.w3.org/1999/xhtml" tooltip=""
+                                    language_neutral_name="location"
+                                    arg_name_trans_key="blocks.location.get_current_location.location"
+                                    old_arg_name="location" />
+                            </block>
+                        </value>
+                        <value name="CALLBACK_PARAM3">
+                            <block type="callback_arg" id="VWD)ON]LaSmM*jv-=MOK">
+                                <mutation xmlns="http://www.w3.org/1999/xhtml" tooltip=""
+                                    language_neutral_name="error"
+                                    arg_name_trans_key="blocks.location.error" old_arg_name="error" />
+                            </block>
+                        </value>
+                        <statement name="DO">
+                            <block type="setter" id="Lfraq(ePk4k8j2A~3k1S">
+                                <mutation xmlns="http://www.w3.org/1999/xhtml" component_name="Map1" />
+                                <field name="component_id">c37ecc80-7e3f-4d96-a908-ca5976d988bf</field>
+                                <field name="field_name">Latitude</field>
+                                <value name="field_value">
+                                    <shadow type="math_number" id="vVV^YP][C$4]%(4~j-kA">
+                                        <field name="NUM">37.78</field>
+                                    </shadow>
+                                    <block type="callback_arg" id="jjZgK%xK5TOa8!+=v.R?">
+                                        <mutation xmlns="http://www.w3.org/1999/xhtml" tooltip=""
+                                            language_neutral_name="latitude"
+                                            arg_name_trans_key="blocks.location.get_current_location.latitude"
+                                            old_arg_name="latitude" is_detached_parameter="true" />
+                                    </block>
+                                </value>
+                                <next>
+                                    <block type="setter" id="wN44iA.c4G#c#/k2|1tt">
+                                        <mutation xmlns="http://www.w3.org/1999/xhtml"
+                                            component_name="Map1" />
+                                        <field name="component_id">
+                                            c37ecc80-7e3f-4d96-a908-ca5976d988bf</field>
+                                        <field name="field_name">Longitude</field>
+                                        <value name="field_value">
+                                            <shadow type="math_number" id="0{/U-AEA,Yxd;4koYN:Q">
+                                                <field name="NUM">-122.4</field>
+                                            </shadow>
+                                            <block type="callback_arg" id="6/[2$3VZ}wpZ{(~G}Ty`">
+                                                <mutation xmlns="http://www.w3.org/1999/xhtml"
+                                                    tooltip="" language_neutral_name="longitude"
+                                                    arg_name_trans_key="blocks.location.get_current_location.longitude"
+                                                    old_arg_name="longitude"
+                                                    is_detached_parameter="true" />
+                                            </block>
+                                        </value>
+                                        <next>
+                                            <block type="variables_set_dynamic"
+                                                id="xKK/=}PU|sW)Btk2z^I)">
+                                                <field name="SCOPE">CLOUD</field>
+                                                <value name="NAME">
+                                                    <shadow type="text" id="JiNZ3*Vr9@@9I~T:@07V">
+                                                        <field name="TEXT">name</field>
+                                                    </shadow>
+                                                    <block type="text_join"
+                                                        id="^kOl!z`_PiRolspvOO_3">
+                                                        <mutation items="3" />
+                                                        <value name="ADD0">
+                                                            <block type="variables_get"
+                                                                id="n#xNfW}/s`@?|altue~%">
+                                                                <mutation
+                                                                    xmlns="http://www.w3.org/1999/xhtml"
+                                                                    saved_name="app variable userID" />
+                                                                <field name="VAR">
+                                                                    f1725fbe-2b54-4de7-b810-bb13dc99a163</field>
+                                                            </block>
+                                                        </value>
+                                                        <value name="ADD1">
+                                                            <block type="text"
+                                                                id="`YMnsS/ICi`~Zgpl8)N{">
+                                                                <field name="TEXT">/coordinates</field>
+                                                            </block>
+                                                        </value>
+                                                    </block>
+                                                </value>
+                                                <value name="VALUE">
+                                                    <block type="lists_create_with"
+                                                        id="Mq:%z]UHVIz[LXfJer;[">
+                                                        <mutation items="1" />
+                                                        <value name="ADD0">
+                                                            <block type="object_create"
+                                                                id="Z2;LH2BNajUjqrg3c9S.">
+                                                                <mutation
+                                                                    xmlns="http://www.w3.org/1999/xhtml"
+                                                                    num_fields="2">
+                                                                    <field name="latitude" />
+                                                                    <field name="longitude" />
+                                                                </mutation>
+                                                                <field name="field1">latitude</field>
+                                                                <field name="field2">longitude</field>
+                                                                <value name="field_input1">
+                                                                    <block type="callback_arg"
+                                                                        id="SmX5aDk+AAV}r%:~NO4N">
+                                                                        <mutation
+                                                                            xmlns="http://www.w3.org/1999/xhtml"
+                                                                            tooltip=""
+                                                                            language_neutral_name="latitude"
+                                                                            arg_name_trans_key="blocks.location.get_current_location.latitude"
+                                                                            old_arg_name="latitude"
+                                                                            is_detached_parameter="true" />
+                                                                    </block>
+                                                                </value>
+                                                                <value name="field_input2">
+                                                                    <block type="callback_arg"
+                                                                        id="I;a?Fi5F4Jq2`?-OJr|A">
+                                                                        <mutation
+                                                                            xmlns="http://www.w3.org/1999/xhtml"
+                                                                            tooltip=""
+                                                                            language_neutral_name="longitude"
+                                                                            arg_name_trans_key="blocks.location.get_current_location.longitude"
+                                                                            old_arg_name="longitude"
+                                                                            is_detached_parameter="true" />
+                                                                    </block>
+                                                                </value>
+                                                            </block>
+                                                        </value>
+                                                    </block>
+                                                </value>
+                                            </block>
+                                        </next>
+                                    </block>
+                                </next>
+                            </block>
+                        </statement>
+                    </block>
+                </statement>
+                <next>
+                    <block type="setter" id="!zJ;7Z-kJzq{9fY*@kLH">
+                        <mutation xmlns="http://www.w3.org/1999/xhtml" component_name="Container1" />
+                        <field name="component_id">a563a483-70e4-4bc6-b34b-b05ffef3acd5</field>
+                        <field name="field_name">BackgroundColor</field>
+                        <value name="field_value">
+                            <shadow type="colour_picker" id="I1Z%s|GieF{Na19V}*^h">
+                                <field name="COLOUR">#000000</field>
+                            </shadow>
+                            <block type="variables_get" id="KpzQr6;KudjY1]Yv`K?{">
+                                <mutation xmlns="http://www.w3.org/1999/xhtml"
+                                    saved_name="app variable app_color" />
+                                <field name="VAR">12ad059a-0bbd-45c0-8d1d-ca44732b9e89</field>
+                            </block>
+                        </value>
+                    </block>
+                </next>
+            </block>
+        </statement>
+    </block>
+    <block type="component_event" id="Zc-2Sm5**~E;etJsUwsX" x="0" y="478">
+        <mutation xmlns="http://www.w3.org/1999/xhtml"
+            component_id="1fe5bf1e-0f36-4a4a-957d-e0f43dacd040" component_name="CameraIcon"
+            component_type="Image" parent_id="undefined" event_id="Click" was_updated="true" />
+        <field name="component_id">1fe5bf1e-0f36-4a4a-957d-e0f43dacd040</field>
+        <field name="event_id">Click</field>
+        <statement name="input_do">
+            <block type="controls_navigate_new" id="L./MVvvsU*lEt(se}$H%">
+                <value name="COMPONENT">
+                    <shadow type="any_component_component_dropdown" id="cZ,:U1k~oyAj]p`^dcTC">
+                        <mutation xmlns="http://www.w3.org/1999/xhtml" component_id="Camera"
+                            component_types_to_include="[&quot;Screen&quot;]" />
+                        <field name="component_id">a8843067-b0cc-4362-81bb-e50742a3fbca</field>
+                    </shadow>
+                </value>
+            </block>
+        </statement>
+    </block>
+    <block type="component_event" id="v57G~1f^@H;JtBLDBx8N" x="1" y="559">
+        <mutation xmlns="http://www.w3.org/1999/xhtml"
+            component_id="c37ecc80-7e3f-4d96-a908-ca5976d988bf" component_name="Map1"
+            component_type="Map" parent_id="undefined" event_id="onMapReady" was_updated="true" />
+        <field name="component_id">c37ecc80-7e3f-4d96-a908-ca5976d988bf</field>
+        <field name="event_id">onMapReady</field>
+        <statement name="input_do">
+            <block type="location_get_current_location" id="!%NbvV%[t[T7^X2|1rJh">
+                <mutation xmlns="http://www.w3.org/1999/xhtml" show_callback_params="true"
+                    callback_params_added="true" />
+                <value name="CALLBACK_PARAM0">
+                    <block type="callback_arg" id="=oTNv=OYw9q6qTfVn5aJ">
+                        <mutation xmlns="http://www.w3.org/1999/xhtml" tooltip=""
+                            language_neutral_name="latitude"
+                            arg_name_trans_key="blocks.location.get_current_location.latitude"
+                            old_arg_name="latitude" />
+                    </block>
+                </value>
+                <value name="CALLBACK_PARAM1">
+                    <block type="callback_arg" id="=(/@b7?9%X+T(o;iXIFC">
+                        <mutation xmlns="http://www.w3.org/1999/xhtml" tooltip=""
+                            language_neutral_name="longitude"
+                            arg_name_trans_key="blocks.location.get_current_location.longitude"
+                            old_arg_name="longitude" />
+                    </block>
+                </value>
+                <value name="CALLBACK_PARAM2">
+                    <block type="callback_arg" id=":-RG`bUhssr+asiK20*.">
+                        <mutation xmlns="http://www.w3.org/1999/xhtml" tooltip=""
+                            language_neutral_name="location"
+                            arg_name_trans_key="blocks.location.get_current_location.location"
+                            old_arg_name="location" />
+                    </block>
+                </value>
+                <value name="CALLBACK_PARAM3">
+                    <block type="callback_arg" id="?5=If]?*}!))aTw%afy~">
+                        <mutation xmlns="http://www.w3.org/1999/xhtml" tooltip=""
+                            language_neutral_name="error" arg_name_trans_key="blocks.location.error"
+                            old_arg_name="error" />
+                    </block>
+                </value>
+                <statement name="DO">
+                    <block type="setter" id="RFAKhr[7V0#NxNIi9eO/">
+                        <mutation xmlns="http://www.w3.org/1999/xhtml" component_name="Map1" />
+                        <field name="component_id">c37ecc80-7e3f-4d96-a908-ca5976d988bf</field>
+                        <field name="field_name">Latitude</field>
+                        <value name="field_value">
+                            <shadow type="math_number" id="AnpRuk.E6EP:N~K^35e:">
+                                <field name="NUM">37.78</field>
+                            </shadow>
+                            <block type="callback_arg" id="S~ArzNMR3-n8x$m%SOs]">
+                                <mutation xmlns="http://www.w3.org/1999/xhtml" tooltip=""
+                                    language_neutral_name="latitude"
+                                    arg_name_trans_key="blocks.location.get_current_location.latitude"
+                                    old_arg_name="latitude" is_detached_parameter="true" />
+                            </block>
+                        </value>
+                        <next>
+                            <block type="setter" id="s:N^[]FPJ~kf_)i3[(DP">
+                                <mutation xmlns="http://www.w3.org/1999/xhtml" component_name="Map1" />
+                                <field name="component_id">c37ecc80-7e3f-4d96-a908-ca5976d988bf</field>
+                                <field name="field_name">Longitude</field>
+                                <value name="field_value">
+                                    <shadow type="math_number" id="~?N,T:,~T]Y)zz/$vN{Y">
+                                        <field name="NUM">-122.4</field>
+                                    </shadow>
+                                    <block type="callback_arg" id="FY.y]RPW=iBNZ|Wc.`g8">
+                                        <mutation xmlns="http://www.w3.org/1999/xhtml" tooltip=""
+                                            language_neutral_name="longitude"
+                                            arg_name_trans_key="blocks.location.get_current_location.longitude"
+                                            old_arg_name="longitude" is_detached_parameter="true" />
+                                    </block>
+                                </value>
+                            </block>
+                        </next>
+                    </block>
+                </statement>
+            </block>
+        </statement>
+    </block>
+    <block type="procedures_defnoreturn" id="e++SgozA(U2%B)ZL{q^b" x="10" y="955">
+        <field name="NAME">add_new_point_to_line</field>
+        <comment pinned="false" h="80" w="160">Describe this function...</comment>
+    </block>
+    <block type="caller" id="atGAsA5QJa@v;OEKuM`#" inline="false" disabled="true" x="398" y="954">
+        <mutation xmlns="http://www.w3.org/1999/xhtml" component_name="Map1"
+            component_id="c37ecc80-7e3f-4d96-a908-ca5976d988bf" component_type="Map"
+            function_name="addPolyline" was_updated="true" />
+        <field name="component_id">c37ecc80-7e3f-4d96-a908-ca5976d988bf</field>
+        <field name="function_name">addPolyline</field>
+        <value name="arg0">
+            <block type="lists_getSublist" id="))b#*s!WR5?km7sjcCuk">
+                <mutation at1="true" at2="false" />
+                <field name="WHERE1">FROM_END</field>
+                <field name="WHERE2">LAST</field>
+                <value name="LIST">
+                    <block type="variables_get" id="|rTZRccr_{{5DFu_8wtF">
+                        <mutation xmlns="http://www.w3.org/1999/xhtml"
+                            saved_name="app variable loc_points" />
+                        <field name="VAR">e6100dc4-a104-406d-921a-f4bd677651c1</field>
+                    </block>
+                </value>
+                <value name="AT1">
+                    <shadow type="math_number" id="3n=Nk`91qL_0eE|IqXNJ">
+                        <field name="NUM">3</field>
+                    </shadow>
+                </value>
+            </block>
+        </value>
+        <value name="arg1">
+            <shadow type="math_number" id="n^pFSQ$.jAjN!!hrPR[%">
+                <field name="NUM">3</field>
+            </shadow>
+            <block type="variables_get" id="rsc2xNbG@~qcmpHb+j@!">
+                <mutation xmlns="http://www.w3.org/1999/xhtml" saved_name="app variable line_width" />
+                <field name="VAR">c8ab46ee-d641-4d3a-8e79-f782d55de583</field>
+            </block>
+        </value>
+        <value name="arg2">
+            <shadow type="text" id="ffr}sM/475NTgCO{e?Z)">
+                <field name="TEXT" />
+            </shadow>
+            <block type="variables_get" id="ti`dk$2qfi^+dOXMXTKn">
+                <mutation xmlns="http://www.w3.org/1999/xhtml" saved_name="app variable line_color" />
+                <field name="VAR">11e62f15-95f6-4a55-b834-13b2bb1982aa</field>
+            </block>
+        </value>
+    </block>
+    <block type="component_event" id="WUH7+Fp$X/ii=n^_hbwK" x="0" y="1119">
+        <mutation xmlns="http://www.w3.org/1999/xhtml"
+            component_id="6a061b70-3848-4501-a07f-bd53fd74d617" component_name="GalleryIcon"
+            component_type="Image" parent_id="undefined" event_id="Click" was_updated="true" />
+        <field name="component_id">6a061b70-3848-4501-a07f-bd53fd74d617</field>
+        <field name="event_id">Click</field>
+        <statement name="input_do">
+            <block type="controls_navigate_new" id="s*Yo0TKq|$!_ybs2{510">
+                <value name="COMPONENT">
+                    <shadow type="any_component_component_dropdown" id="Oj+Rm5?TFQHQ_h`=!OwK">
+                        <mutation xmlns="http://www.w3.org/1999/xhtml" component_id="Gallery"
+                            component_types_to_include="[&quot;Screen&quot;]" />
+                        <field name="component_id">f2a5151e-bc0b-4c6f-b4d6-2cf44963f8b9</field>
+                    </shadow>
+                </value>
+            </block>
+        </statement>
+    </block>
+    <block type="component_event" id=")uy1=*W1c#;/G%-uMO#$" x="0" y="1219">
+        <mutation xmlns="http://www.w3.org/1999/xhtml"
+            component_id="cb707565-3410-47a8-a74b-866173cc3d20" component_name="MapIcon"
+            component_type="Image" parent_id="undefined" event_id="Click" was_updated="true" />
+        <field name="component_id">cb707565-3410-47a8-a74b-866173cc3d20</field>
+        <field name="event_id">Click</field>
+        <statement name="input_do">
+            <block type="controls_navigate_new" id="?/x#UO67;]8Y6fImBMuI">
+                <value name="COMPONENT">
+                    <shadow type="any_component_component_dropdown" id="eXi_YZG`;?|t[DPDlc=E">
+                        <mutation xmlns="http://www.w3.org/1999/xhtml" component_id="Map"
+                            component_types_to_include="[&quot;Screen&quot;]" />
+                        <field name="component_id">06028a38-f9c7-4ca2-87c9-7242635840d6</field>
+                    </shadow>
+                </value>
+            </block>
+        </statement>
+    </block>
+    <block type="component_event" id="`k7MBd}8g6451]b;ddqN" x="0" y="1319">
+        <mutation xmlns="http://www.w3.org/1999/xhtml"
+            component_id="6ffeeeee-f3b5-421c-b479-fcdc77c2d6d6" component_name="ProfileIcon"
+            component_type="Image" parent_id="undefined" event_id="Click" was_updated="true" />
+        <field name="component_id">6ffeeeee-f3b5-421c-b479-fcdc77c2d6d6</field>
+        <field name="event_id">Click</field>
+        <statement name="input_do">
+            <block type="controls_navigate_new" id="pfsMza#SZ`1Xz+Otk?c,">
+                <value name="COMPONENT">
+                    <shadow type="any_component_component_dropdown" id="l,O(.ID1U5I?Rq||l7#[">
+                        <mutation xmlns="http://www.w3.org/1999/xhtml" component_id="Profile"
+                            component_types_to_include="[&quot;Screen&quot;]" />
+                        <field name="component_id">570fd745-230f-4980-b826-5589907e6dc5</field>
+                    </shadow>
+                </value>
+            </block>
+        </statement>
+    </block>
+</xml>
