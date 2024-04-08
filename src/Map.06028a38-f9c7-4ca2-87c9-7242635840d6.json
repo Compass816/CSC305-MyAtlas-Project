@@ -51,13 +51,13 @@
             "translatedName": "Layout",
             "reactType": "ScrollView",
             "properties": {
-                "Height": 62,
-                "Width": 379,
+                "Height": 85,
+                "Width": 377,
                 "Visible": true,
-                "X": 0,
-                "Y": 607,
-                "RelativeX": 0,
-                "RelativeY": 607,
+                "X": -1,
+                "Y": 582.98291015625,
+                "RelativeX": -1,
+                "RelativeY": 582.98291015625,
                 "ResizeMode": "STRETCH",
                 "Layout": "column",
                 "BackgroundColor": "rgba(244, 190, 92, 1)",
@@ -94,7 +94,7 @@
                 "LayoutDirection": "VERTICAL",
                 "ParentId": "06028a38-f9c7-4ca2-87c9-7242635840d6",
                 "position": "absolute",
-                "edgeOffsets": 607.96875,
+                "edgeOffsets": 582.98291015625,
                 "horizontal": false
             },
             "children": [
@@ -106,10 +106,10 @@
                         "Height": "Fill container",
                         "Width": "Fill container",
                         "Visible": true,
-                        "X": 41.00189960352145,
-                        "Y": -24.966796875,
-                        "RelativeX": 41.00189960352145,
-                        "RelativeY": -24.966796875,
+                        "X": 42.00189960352145,
+                        "Y": 0.01904296875,
+                        "RelativeX": 42.00189960352145,
+                        "RelativeY": 0.01904296875,
                         "ResizeMode": "STRETCH",
                         "Layout": "column",
                         "Justification": "space-between",
@@ -143,7 +143,7 @@
                         "ScrollBarVisible": true,
                         "LayoutDirection": "HORIZONTAL",
                         "horizontal": true,
-                        "edgeOffsets": 0.01904296875
+                        "edgeOffsets": 0.00958251953125
                     },
                     "children": [
                         {
@@ -391,8 +391,6 @@
                     "latitudeDelta": 0.09,
                     "longitudeDelta": 0.04
                 },
-                "initialRegion": {},
-                "legalLabelInsets": {},
                 "ParentId": "06028a38-f9c7-4ca2-87c9-7242635840d6",
                 "position": "absolute",
                 "edgeOffsets": 1.2689392566680908
