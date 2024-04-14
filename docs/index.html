@@ -11,29 +11,60 @@
 
 <body>
     <div id="app">
-        <div id="background"></div>
-        <div id="sun" class="celestial-body"></div>
-        <div id="moon" class="celestial-body"></div>
+        <div id="background-sunrise" class="background"></div>
+        <div id="background-sunset" class="background"></div>
+        <div id="background-day" class="background"></div>
+        <div id="background-nightrise" class="background"></div>
+        <div id="background-night" class="background"></div>
+        <div id="background-nightset" class="background"></div>
+        <div id="sun">
+            <div id="sun-wrapper">
+                <div id="sun-core"></div>
+                <div class="sun-ray" id="sun-ray-1"></div>
+                <div class="sun-ray" id="sun-ray-2"></div>
+                <div class="sun-ray" id="sun-ray-3"></div>
+            </div>
+        </div>
+        <div id="moon">
+            <div id="moon-wrapper">
+                <div id="moon-core">
+                    <div class="moon-ray" id="moon-ray-1"></div>
+                    <div class="moon-ray" id="moon-ray-2"></div>
+                    <div class="moon-ray" id="moon-ray-3"></div>
+                </div>
+            </div>
+        </div>
         <button id="timelapse" style="position: absolute; top: 10px; left: 10px;">Start Time-lapse</button>
+        <input id="time-input" type="time" style="position: absolute; top: 10px; right: 10px; z-index: 3;">
+        <button id="set-time" style="position: absolute; top: 40px; right: 10px; z-index: 3;">Set Time</button>
         <div id="time"></div>
-        <div id="cloud1" class="cloud"></div>
-        <div id="cloud2" class="cloud"></div>
-        <div id="cloud3" class="cloud"></div>
-        <div id="star1" class="star"></div>
-        <div id="star2" class="star"></div>
-        <div id="star3" class="star"></div>
-        <div id="star4" class="star"></div>
-        <div id="star5" class="star"></div>
-        <div id="star6" class="star"></div>
-        <div id="mountain"></div>
+        <div id="cloud1" class="cloud cloud3" style="position: absolute; top: 5%; left: 45%; z-index: 2;"></div>
+        <div id="cloud2" class="cloud cloud6" style="position: absolute; top: 20%; left: -25%; z-index: 2;"></div>
+        <div id="cloud3" class="cloud cloud4" style="position: absolute; top: 30%; left: 25%; z-index: 2;"></div>
+        <div id="cloud4" class="cloud cloud1" style="position: absolute; top: 43%; left: -5%; z-index: 2;"></div>
+        <div id="hill1"></div>
+        <div id="hill2"></div>
+        <div id="stars"></div>
+        <div id="shooting-star"></div>
     </div>
-    <script>
-        let virtualTime;
 
-        function calculatePosition(time) {
+    <script>
+        function calculatePositionAndSize(time) {
             const hours = (time.getHours() + time.getMinutes() / 60) % 24;
             const baseHour = hours % 12;
-            return (baseHour < 6) ? (1 - baseHour / 6) * 100 : ((baseHour - 6) / 6) * 100;
+            let position = (baseHour < 6) ? (1 - baseHour / 6) * 100 : ((baseHour - 6) / 6) * 100;
+
+            // Calculate the size of the sun based on the time so that at 6 it's x2 and 8 it's x1
+            let size;
+            if (hours >= 6 && hours < 8) {
+                size = 2 - (hours - 6) / 2;
+            } else if (hours >= 18 && hours < 20) {
+                size = 1 + (hours - 18) / 2;
+            } else {
+                size = 1;
+            }
+
+            return { position, size };
         }
 
         function getCelestialBody(time) {
@@ -44,65 +75,86 @@
         function updateBackground(time) {
             const hours = time.getHours();
             const minutes = time.getMinutes();
-            const background = document.getElementById('background');
-            const stars = document.getElementsByClassName('star');
+            const percentage = minutes / 60;
 
-            if (hours >= 17 && hours < 18) {
-                // Fade out from 5pm to 6pm
-                const percentage = (minutes / 60);
-                background.style.opacity = 1 - percentage;
-                for (let i = 0; i < stars.length; i++) {
-                    stars[i].style.opacity = 1 - percentage;
-                }
+            const backgroundSunrise = document.getElementById('background-sunrise');
+            const backgroundDay = document.getElementById('background-day');
+            const backgroundSunset = document.getElementById('background-sunset');
+            const backgroundNightrise = document.getElementById('background-nightrise');
+            const backgroundNight = document.getElementById('background-night');
+            const backgroundNightset = document.getElementById('background-nightset');
+            const stars = document.getElementById('stars');
+
+            let sunriseOpacity = 0;
+            let dayOpacity = 0;
+            let sunsetOpacity = 0;
+            let nightriseOpacity = 0;
+            let nightOpacity = 0;
+            let nightsetOpacity = 0;
+            let starsDisplay = 'block';
+
+            if (hours >= 4 && hours < 5) {
+                nightOpacity = 1 - percentage;
+                nightsetOpacity = percentage;
             } else if (hours >= 5 && hours < 6) {
-                // Fade in from 5am to 6am
-                const percentage = (minutes / 60);
-                background.style.opacity = percentage;
-                for (let i = 0; i < stars.length; i++) {
-                    stars[i].style.opacity = percentage;
-                }
-            } else if (hours >= 6 && hours < 17) {
-                // Fully visible during the day
-                background.style.opacity = 1;
-                for (let i = 0; i < stars.length; i++) {
-                    stars[i].style.opacity = 0;
-                }
-            } else {
-                // Fully transparent during the night
-                background.style.opacity = 0;
-                for (let i = 0; i < stars.length; i++) {
-                    stars[i].style.opacity = 1;
-                }
+                nightsetOpacity = 1 - percentage;
+                sunriseOpacity = percentage;
+            } else if (hours >= 6 && hours < 8) {
+                sunriseOpacity = 1 - (hours - 6 + percentage) / 2;
+                dayOpacity = (hours - 6 + percentage) / 2;
+            } else if (hours >= 8 && hours < 17) {
+                dayOpacity = 1;
+            } else if (hours >= 17 && hours < 18) {
+                dayOpacity = 1 - percentage;
+                sunsetOpacity = percentage;
+            } else if (hours >= 18 && hours < 19) {
+                sunsetOpacity = 1 - percentage;
+                nightriseOpacity = percentage;
+            } else if (hours >= 19 && hours < 20) {
+                nightriseOpacity = 1 - percentage;
+                nightOpacity = percentage;
+            } else if (hours >= 20 || hours < 4) {
+                nightOpacity = 1;
             }
+
+            backgroundSunrise.style.opacity = sunriseOpacity;
+            backgroundDay.style.opacity = dayOpacity;
+            backgroundSunset.style.opacity = sunsetOpacity;
+            backgroundNightrise.style.opacity = nightriseOpacity;
+            backgroundNight.style.opacity = nightOpacity;
+            backgroundNightset.style.opacity = nightsetOpacity;
+            stars.style.display = starsDisplay;
         }
 
-        function updateMountain(time) {
-            const hours = time.getHours();
-            const minutes = time.getMinutes();
-            const mountain = document.getElementById('mountain');
-            if (hours < 6 || hours >= 18) {
-                mountain.style.background = 'radial-gradient(circle at 50% 0%, #532D6C, #532D6C)';
-            } else {
-                const startColor = [83, 45, 108]; // RGB for #532D6C
-                const endColor = [255, 69, 0]; // RGB for #FF4500
-                const percentage = (hours - 6 + minutes / 60) / 6; // Percentage of sun's rise
-                const color = startColor.map((start, i) => Math.round(start + percentage * (endColor[i] - start))).join(', ');
-                mountain.style.background = `radial-gradient(circle at 50% 0%, rgb(${color}), #532D6C)`;
-            }
-        }
+        let overrideTime = null;
+        let virtualTime = null;
 
         function updatePosition(virtual = false) {
-            const time = virtual ? virtualTime : new Date();
-            const position = calculatePosition(time);
+            let time;
+            if (virtual) {
+                time = virtualTime;
+            } else {
+                time = overrideTime || new Date();
+            }
+
+            const { position, size } = calculatePositionAndSize(time);
             const celestialBody = getCelestialBody(time);
+            let sunRay1 = document.getElementById('sun-ray-1');
+            let sunRay2 = document.getElementById('sun-ray-2');
+            let sunRay3 = document.getElementById('sun-ray-3');
 
             if (celestialBody === 'sun') {
                 sun.style.bottom = `${position}%`;
-                sun.style.display = 'block';
+                sun.style.display = 'flex';
                 moon.style.display = 'none';
+
+                // Adjust the size of the sun and its rings
+                sunRay1.style.transform = `scale(${size})`;
+                sunRay2.style.transform = `scale(${size})`;
+                sunRay3.style.transform = `scale(${size})`;
             } else {
                 moon.style.bottom = `${position}%`;
-                moon.style.display = 'block';
+                moon.style.display = 'flex';
                 sun.style.display = 'none';
             }
 
@@ -113,7 +165,6 @@
             }
 
             document.getElementById('time').textContent = time.toLocaleTimeString(); // Display the current time
-            updateMountain(time);
 
             console.log(time, position);
         }
@@ -126,6 +177,15 @@
             virtualTime.setHours(6, 0, 0, 0); // Start at 6am
             intervalId = setInterval(() => updatePosition(true), 100); // Start the time-lapse
         });
+
+        document.getElementById('set-time').addEventListener('click', function () {
+            const timeInput = document.getElementById('time-input');
+            const [hours, minutes] = timeInput.value.split(':').map(Number);
+            overrideTime = new Date();
+            overrideTime.setHours(hours, minutes, 0, 0);
+            updatePosition();
+        });
+
     </script>
 </body>
 
