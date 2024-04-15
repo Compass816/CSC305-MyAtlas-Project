@@ -1,4 +1,5 @@
 {
+    "id": "f14b9902-9676-4a80-bc85-4084000aa21d",
     "type": "Screen",
     "translatedName": "Screen",
     "reactType": "ViewWithProps",
@@ -1640,7 +1641,6 @@
             "name": "SettingsScreenLabel1"
         }
     ],
-    "id": "f14b9902-9676-4a80-bc85-4084000aa21d",
     "thunkableVersion": 452,
     "bindings": null,
     "name": "Profile Settings"
