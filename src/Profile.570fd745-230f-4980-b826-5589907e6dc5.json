@@ -51,13 +51,13 @@
             "translatedName": "Layout",
             "reactType": "ScrollView",
             "properties": {
-                "Height": 64,
-                "Width": 261,
+                "Height": 71,
+                "Width": 269,
                 "Visible": true,
-                "X": 11,
-                "Y": 171,
-                "RelativeX": 11,
-                "RelativeY": 171,
+                "X": 12,
+                "Y": 170,
+                "RelativeX": 12,
+                "RelativeY": 170,
                 "ResizeMode": "STRETCH",
                 "Layout": "column",
                 "Justification": "center",
@@ -92,7 +92,7 @@
                 "LayoutDirection": "VERTICAL",
                 "ParentId": "570fd745-230f-4980-b826-5589907e6dc5",
                 "position": "absolute",
-                "edgeOffsets": 171.00000000000003,
+                "edgeOffsets": 170,
                 "horizontal": false
             },
             "children": [
@@ -104,10 +104,10 @@
                         "Height": "Fill container",
                         "Width": "Fill container",
                         "Visible": true,
-                        "X": null,
-                        "Y": null,
-                        "RelativeX": null,
-                        "RelativeY": null,
+                        "X": -35,
+                        "Y": -5,
+                        "RelativeX": -35,
+                        "RelativeY": -5,
                         "ResizeMode": "STRETCH",
                         "Layout": "column",
                         "Justification": "center",
@@ -141,7 +141,7 @@
                         "ScrollBarVisible": true,
                         "LayoutDirection": "HORIZONTAL",
                         "horizontal": true,
-                        "edgeOffsets": null
+                        "edgeOffsets": -1
                     },
                     "children": [
                         {
@@ -198,12 +198,16 @@
                                     "left": "57.86666666666667%",
                                     "top": "56.5803035982009%",
                                     "lineHeight": 1,
-                                    "display": "flex"
+                                    "display": "flex",
+                                    "fontWeight": "bold",
+                                    "textAlign": "left"
                                 },
                                 "ParentId": "570fd745-230f-4980-b826-5589907e6dc5",
                                 "position": "absolute",
                                 "edgeOffsets": 274,
-                                "children": "Set a name in settings"
+                                "children": "Set a name in settings",
+                                "FontWeight": "bold",
+                                "TextAlign": "left"
                             },
                             "children": [],
                             "id": "e85b2e92-f4e0-4e5e-8b84-7744f9d3c7d8",
@@ -223,10 +227,10 @@
                         "Height": "Fill container",
                         "Width": "Fill container",
                         "Visible": true,
-                        "X": null,
-                        "Y": null,
-                        "RelativeX": null,
-                        "RelativeY": null,
+                        "X": -35,
+                        "Y": -5,
+                        "RelativeX": -35,
+                        "RelativeY": -5,
                         "ResizeMode": "STRETCH",
                         "Layout": "column",
                         "Justification": "center",
@@ -260,7 +264,7 @@
                         "ScrollBarVisible": true,
                         "LayoutDirection": "HORIZONTAL",
                         "horizontal": true,
-                        "edgeOffsets": null
+                        "edgeOffsets": -1
                     },
                     "children": [
                         {
