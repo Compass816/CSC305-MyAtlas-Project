@@ -861,13 +861,13 @@
             "translatedName": "Layout",
             "reactType": "ScrollView",
             "properties": {
-                "Height": 82,
-                "Width": 381,
+                "Height": 83,
+                "Width": 385,
                 "Visible": true,
-                "X": 0.7407407760620117,
-                "Y": 584.7338256835938,
-                "RelativeX": 0.7407407760620117,
-                "RelativeY": 584.7338256835938,
+                "X": 0,
+                "Y": 585,
+                "RelativeX": 0,
+                "RelativeY": 585,
                 "ResizeMode": "STRETCH",
                 "Layout": "column",
                 "BackgroundColor": "rgba(244, 190, 92, 1)",
@@ -904,7 +904,7 @@
                 "LayoutDirection": "VERTICAL",
                 "ParentId": "06028a38-f9c7-4ca2-87c9-7242635840d6",
                 "position": "absolute",
-                "edgeOffsets": 584.7338256835938,
+                "edgeOffsets": 586.1111450195312,
                 "horizontal": false
             },
             "children": [
@@ -916,10 +916,10 @@
                         "Height": "Fill container",
                         "Width": "Fill container",
                         "Visible": true,
-                        "X": 35.26115882745944,
-                        "Y": -0.7110595703125,
-                        "RelativeX": 35.26115882745944,
-                        "RelativeY": -0.7110595703125,
+                        "X": 34.15004766336642,
+                        "Y": -1.82220458984375,
+                        "RelativeX": 34.15004766336642,
+                        "RelativeY": -1.82220458984375,
                         "ResizeMode": "STRETCH",
                         "Layout": "column",
                         "Justification": "space-between",
@@ -953,7 +953,7 @@
                         "ScrollBarVisible": true,
                         "LayoutDirection": "HORIZONTAL",
                         "horizontal": true,
-                        "edgeOffsets": 0.02276611328125
+                        "edgeOffsets": -0.7110595703125
                     },
                     "children": [
                         {
