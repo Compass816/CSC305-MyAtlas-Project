@@ -3,190 +3,277 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="hero.css">
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
     <script src="firebaseConfig.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rock+Salt&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <div id="app">
-        <div id="background-sunrise" class="background"></div>
-        <div id="background-sunset" class="background"></div>
-        <div id="background-day" class="background"></div>
-        <div id="background-nightrise" class="background"></div>
-        <div id="background-night" class="background"></div>
-        <div id="background-nightset" class="background"></div>
-        <div id="sun">
-            <div id="sun-wrapper">
-                <div id="sun-core"></div>
-                <div class="sun-ray" id="sun-ray-1"></div>
-                <div class="sun-ray" id="sun-ray-2"></div>
-                <div class="sun-ray" id="sun-ray-3"></div>
+    <div class="navbar01_component">
+        <div class="navbar01_container">
+            <a href="#" class="navbar01_logo-link">
+                <div class="logo_component">
+                    <div class="logo_logomark">
+                        <img src="/docs/assets/Icon_PNG.png" loading="eager" height="" alt="Logo"
+                            class="styleguide_logomark-bg">
+                    </div>
+                    <h2 class="navbar01_link brand">MyAtlas</h2>
+                </div>
+            </a>
+            <nav role="navigation" class="navbar01_menu">
+                <div class="navbar01_menu-left">
+                    <a href="#" class="navbar01_link text-link">Home</a>
+                    <a href="#about" class="navbar01_link text-link">About</a>
+                    <a href="" target="_blank" class="navbar01_link text-link">Docs</a>
+                </div>
+                <div class="navbar01_menu-right">
+                    <div class="navbar01_button-wrapper">
+                        <a href="#try" class="button w-inline-block">
+                            <div>Try Now</div>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+            <div class="navbar01_menu-button w-nav-button" style="-webkit-user-select: text;" aria-label="menu"
+                role="button" tabindex="0" aria-controls="w-nav-overlay-0" aria-haspopup="menu" aria-expanded="false">
+                <div class="menu-icon_component">
+                    <div class="menu-icon_line-top"></div>
+                    <div class="menu-icon_line-middle">
+                        <div class="menu-icon_line-middle-inner"></div>
+                    </div>
+                    <div class="menu-icon_line-bottom"></div>
+                </div>
             </div>
         </div>
-        <div id="moon">
-            <div id="moon-wrapper">
-                <div id="moon-core">
+        <div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div>
+    </div>
+    <header id="hero">
+        <div class="hero__animation">
+            <div id="background-sunrise" class="background"></div>
+            <div id="background-sunset" class="background"></div>
+            <div id="background-day" class="background"></div>
+            <div id="background-nightrise" class="background"></div>
+            <div id="background-night" class="background"></div>
+            <div id="background-nightset" class="background"></div>
+            <div id="sun" class="movingObject">
+                <div id="sun-wrapper">
+                    <div id="sun-core"></div>
+                    <div class="sun-ray" id="sun-ray-1"></div>
+                    <div class="sun-ray" id="sun-ray-2"></div>
+                    <div class="sun-ray" id="sun-ray-3"></div>
+                </div>
+            </div>
+            <div id="moon" class="movingObject">
+                <div id="moon-wrapper">
+                    <div id="moon-core"></div>
                     <div class="moon-ray" id="moon-ray-1"></div>
                     <div class="moon-ray" id="moon-ray-2"></div>
                     <div class="moon-ray" id="moon-ray-3"></div>
                 </div>
             </div>
+            <div id="clouds"></div>
+            <div id="stars"></div>
+            <div class="shooting-star"></div>
+            <div class="hero__wave"></div>
         </div>
-        <button id="timelapse" style="position: absolute; top: 10px; left: 10px;">Start Time-lapse</button>
-        <input id="time-input" type="time" style="position: absolute; top: 10px; right: 10px; z-index: 3;">
-        <button id="set-time" style="position: absolute; top: 40px; right: 10px; z-index: 3;">Set Time</button>
-        <div id="time"></div>
-        <div id="cloud1" class="cloud cloud3" style="position: absolute; top: 5%; left: 45%; z-index: 2;"></div>
-        <div id="cloud2" class="cloud cloud6" style="position: absolute; top: 20%; left: -25%; z-index: 2;"></div>
-        <div id="cloud3" class="cloud cloud4" style="position: absolute; top: 30%; left: 25%; z-index: 2;"></div>
-        <div id="cloud4" class="cloud cloud1" style="position: absolute; top: 43%; left: -5%; z-index: 2;"></div>
-        <div id="hill1"></div>
-        <div id="hill2"></div>
-        <div id="stars"></div>
-        <div id="shooting-star"></div>
-    </div>
+        <section class="hero__content-wrapper">
+            <div class="page-padding">
+                <div class="container-large">
+                    <div class="heroheader16_component">
+                        <div class="hero__title-wrapper">
+                            <h1>MyAtlas</h1>
+                            <p>Explore More Together</p>
+                        </div>
+                        <div class="space-xhuge"></div>
+                        <div class="heroheader16_image-wrapper">
+                            <img src="/docs/assets/placeholder.jpg" loading="lazy" alt="MacBook mockup"
+                                class="heroheader16_image feature">
+                            <div class="lightbox__wrapper">
+                                <img src="https://assets-global.website-files.com/662ed2f6e535323a6e690ce3/66343bcc9dba56c96bde27ab_play-icon.svg"
+                                    loading="lazy" alt="Video play icon" class="lightbox__play-icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <section class="section_layout52">
+        <div class="page-padding">
+            <div class="container-large">
+                <div class="padding-vertical-xhuge">
+                    <div class="w-layout-grid layout52_component">
+                        <div class="layout52_image-wrapper"><img
+                                src="https://assets-global.website-files.com/662ed2f6e535323a6e690ce3/662ed3f97e7dcd020405bfc1_dashboard-mockup-01.png"
+                                loading="lazy" width="1440" sizes="100vw" alt="Dashboard mockup"
+                                srcset="https://assets-global.website-files.com/662ed2f6e535323a6e690ce3/662ed3f97e7dcd020405bfc1_dashboard-mockup-01-p-500.png 500w, https://assets-global.website-files.com/662ed2f6e535323a6e690ce3/662ed3f97e7dcd020405bfc1_dashboard-mockup-01-p-800.png 800w, https://assets-global.website-files.com/662ed2f6e535323a6e690ce3/662ed3f97e7dcd020405bfc1_dashboard-mockup-01-p-1080.png 1080w, https://assets-global.website-files.com/662ed2f6e535323a6e690ce3/662ed3f97e7dcd020405bfc1_dashboard-mockup-01-p-1600.png 1600w, https://assets-global.website-files.com/662ed2f6e535323a6e690ce3/662ed3f97e7dcd020405bfc1_dashboard-mockup-01.png 2880w"
+                                class="layout52_image-01 shadow-xlarge"><img
+                                src="https://assets-global.website-files.com/662ed2f6e535323a6e690ce3/662ed3f97e7dcd020405bf9b_iphone-mockup-01.png"
+                                loading="lazy" alt="iPhone mockup" class="layout52_image-02"></div>
+                        <div id="w-node-_57baa5f5-9c16-4efc-f4b0-f64288480326-6e690cf3" class="layout52_content">
+                            <div class="heading-subheading">About</div>
+                            <h2 class="heading-medium">MyAtlas<br></h2>
+                            <div class="space-xsmall"></div>
+                            <div class="text-size-large">My Atlas is an app where you can share your adventures. Plot
+                                your travels on a map, share photos, and make friends!</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <script>
-        function calculatePositionAndSize(time) {
-            const hours = (time.getHours() + time.getMinutes() / 60) % 24;
-            const baseHour = hours % 12;
-            let position = (baseHour < 6) ? (1 - baseHour / 6) * 100 : ((baseHour - 6) / 6) * 100;
+    <section class="section_layout52">
+        <div class="page-padding">
+            <div class="container-large">
+                <div class="padding-vertical-xhuge">
+                    <div class="w-layout-grid layout52_component">
+                        <div id="w-node-_57baa5f5-9c16-4efc-f4b0-f64288480326-6e690cf3" class="layout52_content">
+                            <div class="heading-subheading">Features</div>
+                            <h2 class="heading-medium">Overflowing with useful features<br></h2>
+                            <div class="space-xsmall"></div>
+                            <div class="text-size-large">Powerful, self-serve product and growth analytics to help
+                                you convert, engage, and retain more users. Trusted by over 4,000 startups.</div>
+                        </div>
+                        <div class="layout52_image-wrapper"><img
+                                src="https://assets-global.website-files.com/662ed2f6e535323a6e690ce3/662ed3f97e7dcd020405bf9b_iphone-mockup-01.png"
+                                loading="lazy" alt="iPhone mockup" class="layout52_image-02"><img
+                                src="https://assets-global.website-files.com/plugins/Basic/assets/placeholder.60f9b1840c.svg"
+                                loading="lazy" alt="" class="image-collage__item-1"><img
+                                src="https://assets-global.website-files.com/plugins/Basic/assets/placeholder.60f9b1840c.svg"
+                                loading="lazy" alt="" class="image-collage__item-2"><img
+                                src="https://assets-global.website-files.com/plugins/Basic/assets/placeholder.60f9b1840c.svg"
+                                loading="lazy" alt="" class="image-collage__item-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section_layout08">
+        <div class="page-padding">
+            <div class="container-large">
+                <div class="padding-vertical-xhuge">
+                    <div class="w-layout-grid layout08_component">
+                        <div class="layout52_image-wrapper"><img
+                                src="https://assets-global.website-files.com/plugins/Basic/assets/placeholder.60f9b1840c.svg"
+                                loading="lazy" alt="" class="tri-image__image-1"><img
+                                src="https://assets-global.website-files.com/plugins/Basic/assets/placeholder.60f9b1840c.svg"
+                                loading="lazy" alt="" class="tri-image__image-2"><img
+                                src="https://assets-global.website-files.com/plugins/Basic/assets/placeholder.60f9b1840c.svg"
+                                loading="lazy" alt="" class="tri-image__image-3">
+                        </div>
+                        <div class="layout08_content">
+                            <div class="heading-subheading">Features</div>
+                            <h2 class="heading-medium">Manage your team with reports</h2>
+                            <div class="space-xsmall"></div>
+                            <div class="text-size-large">Measure what matters with Untitled’s easy-to-use reports.
+                                You can filter, export, and drilldown on the data in a couple clicks.</div>
+                            <div class="layout08_item-list">
+                                <div id="w-node-_46f58553-38a4-1688-f6f6-1b89a8a875bf-6e690cf3" class="layout08_item">
+                                    <div class="layout08_item-icon-wrapper">
+                                        <div class="icon-1x1-xsmall w-embed"><svg width="currentWidth"
+                                                height="currentHeight" viewBox="0 0 28 28" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M0 14C0 6.26801 6.26801 0 14 0V0C21.732 0 28 6.26801 28 14V14C28 21.732 21.732 28 14 28V28C6.26801 28 0 21.732 0 14V14Z"
+                                                    fill="#3c7efa78"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M19.9457 8.62169L11.5923 16.6834L9.37568 14.315C8.96734 13.93 8.32568 13.9067 7.85901 14.2334C7.40401 14.5717 7.27568 15.1667 7.55568 15.645L10.1807 19.915C10.4373 20.3117 10.8807 20.5567 11.3823 20.5567C11.8607 20.5567 12.3157 20.3117 12.5723 19.915C12.9923 19.3667 21.0073 9.81169 21.0073 9.81169C22.0573 8.73836 20.7857 7.79336 19.9457 8.61002V8.62169Z"
+                                                    fill="#0061FF"></path>
+                                            </svg></div>
+                                    </div>
+                                    <div class="layout08_item-text-wrapper">
+                                        <div class="text-size-large">Filter, export, and drilldown on the data
+                                            quickly</div>
+                                    </div>
+                                </div>
+                                <div id="w-node-_46f58553-38a4-1688-f6f6-1b89a8a875c5-6e690cf3" class="layout08_item">
+                                    <div class="layout08_item-icon-wrapper">
+                                        <div class="icon-1x1-xsmall w-embed"><svg width="currentWidth"
+                                                height="currentHeight" viewBox="0 0 28 28" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M0 14C0 6.26801 6.26801 0 14 0V0C21.732 0 28 6.26801 28 14V14C28 21.732 21.732 28 14 28V28C6.26801 28 0 21.732 0 14V14Z"
+                                                    fill="#3c7efa78"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M19.9457 8.62169L11.5923 16.6834L9.37568 14.315C8.96734 13.93 8.32568 13.9067 7.85901 14.2334C7.40401 14.5717 7.27568 15.1667 7.55568 15.645L10.1807 19.915C10.4373 20.3117 10.8807 20.5567 11.3823 20.5567C11.8607 20.5567 12.3157 20.3117 12.5723 19.915C12.9923 19.3667 21.0073 9.81169 21.0073 9.81169C22.0573 8.73836 20.7857 7.79336 19.9457 8.61002V8.62169Z"
+                                                    fill="#0061FF"></path>
+                                            </svg></div>
+                                    </div>
+                                    <div class="layout08_item-text-wrapper">
+                                        <div class="text-size-large">Save, schedule, and automate reports to your
+                                            inbox</div>
+                                    </div>
+                                </div>
+                                <div id="w-node-_46f58553-38a4-1688-f6f6-1b89a8a875cb-6e690cf3" class="layout08_item">
+                                    <div class="layout08_item-icon-wrapper">
+                                        <div class="icon-1x1-xsmall w-embed"><svg width="currentWidth"
+                                                height="currentHeight" viewBox="0 0 28 28" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M0 14C0 6.26801 6.26801 0 14 0V0C21.732 0 28 6.26801 28 14V14C28 21.732 21.732 28 14 28V28C6.26801 28 0 21.732 0 14V14Z"
+                                                    fill="#3c7efa78"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M19.9457 8.62169L11.5923 16.6834L9.37568 14.315C8.96734 13.93 8.32568 13.9067 7.85901 14.2334C7.40401 14.5717 7.27568 15.1667 7.55568 15.645L10.1807 19.915C10.4373 20.3117 10.8807 20.5567 11.3823 20.5567C11.8607 20.5567 12.3157 20.3117 12.5723 19.915C12.9923 19.3667 21.0073 9.81169 21.0073 9.81169C22.0573 8.73836 20.7857 7.79336 19.9457 8.61002V8.62169Z"
+                                                    fill="#0061FF"></path>
+                                            </svg></div>
+                                    </div>
+                                    <div class="layout08_item-text-wrapper">
+                                        <div class="text-size-large">Connect the tools you already use with 100+
+                                            integrations</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="banner__section">
 
-            // Calculate the size of the sun based on the time so that at 6 it's x2 and 8 it's x1
-            let size;
-            if (hours >= 6 && hours < 8) {
-                size = 2 - (hours - 6) / 2;
-            } else if (hours >= 18 && hours < 20) {
-                size = 1 + (hours - 18) / 2;
-            } else {
-                size = 1;
-            }
-
-            return { position, size };
-        }
-
-        function getCelestialBody(time) {
-            const hours = time.getHours() + time.getMinutes() / 60;
-            return (hours >= 6 && hours < 18) ? 'sun' : 'moon';
-        }
-
-        function updateBackground(time) {
-            const hours = time.getHours();
-            const minutes = time.getMinutes();
-            const percentage = minutes / 60;
-
-            const backgroundSunrise = document.getElementById('background-sunrise');
-            const backgroundDay = document.getElementById('background-day');
-            const backgroundSunset = document.getElementById('background-sunset');
-            const backgroundNightrise = document.getElementById('background-nightrise');
-            const backgroundNight = document.getElementById('background-night');
-            const backgroundNightset = document.getElementById('background-nightset');
-            const stars = document.getElementById('stars');
-
-            let sunriseOpacity = 0;
-            let dayOpacity = 0;
-            let sunsetOpacity = 0;
-            let nightriseOpacity = 0;
-            let nightOpacity = 0;
-            let nightsetOpacity = 0;
-            let starsDisplay = 'block';
-
-            if (hours >= 4 && hours < 5) {
-                nightOpacity = 1 - percentage;
-                nightsetOpacity = percentage;
-            } else if (hours >= 5 && hours < 6) {
-                nightsetOpacity = 1 - percentage;
-                sunriseOpacity = percentage;
-            } else if (hours >= 6 && hours < 8) {
-                sunriseOpacity = 1 - (hours - 6 + percentage) / 2;
-                dayOpacity = (hours - 6 + percentage) / 2;
-            } else if (hours >= 8 && hours < 17) {
-                dayOpacity = 1;
-            } else if (hours >= 17 && hours < 18) {
-                dayOpacity = 1 - percentage;
-                sunsetOpacity = percentage;
-            } else if (hours >= 18 && hours < 19) {
-                sunsetOpacity = 1 - percentage;
-                nightriseOpacity = percentage;
-            } else if (hours >= 19 && hours < 20) {
-                nightriseOpacity = 1 - percentage;
-                nightOpacity = percentage;
-            } else if (hours >= 20 || hours < 4) {
-                nightOpacity = 1;
-            }
-
-            backgroundSunrise.style.opacity = sunriseOpacity;
-            backgroundDay.style.opacity = dayOpacity;
-            backgroundSunset.style.opacity = sunsetOpacity;
-            backgroundNightrise.style.opacity = nightriseOpacity;
-            backgroundNight.style.opacity = nightOpacity;
-            backgroundNightset.style.opacity = nightsetOpacity;
-            stars.style.display = starsDisplay;
-        }
-
-        let overrideTime = null;
-        let virtualTime = null;
-
-        function updatePosition(virtual = false) {
-            let time;
-            if (virtual) {
-                time = virtualTime;
-            } else {
-                time = overrideTime || new Date();
-            }
-
-            const { position, size } = calculatePositionAndSize(time);
-            const celestialBody = getCelestialBody(time);
-            let sunRay1 = document.getElementById('sun-ray-1');
-            let sunRay2 = document.getElementById('sun-ray-2');
-            let sunRay3 = document.getElementById('sun-ray-3');
-
-            if (celestialBody === 'sun') {
-                sun.style.bottom = `${position}%`;
-                sun.style.display = 'flex';
-                moon.style.display = 'none';
-
-                // Adjust the size of the sun and its rings
-                sunRay1.style.transform = `scale(${size})`;
-                sunRay2.style.transform = `scale(${size})`;
-                sunRay3.style.transform = `scale(${size})`;
-            } else {
-                moon.style.bottom = `${position}%`;
-                moon.style.display = 'flex';
-                sun.style.display = 'none';
-            }
-
-            updateBackground(time);
-
-            if (virtual) {
-                virtualTime.setMinutes(virtualTime.getMinutes() + 1); // Advance time by 1 minute
-            }
-
-            document.getElementById('time').textContent = time.toLocaleTimeString(); // Display the current time
-
-            console.log(time, position);
-        }
-
-        let intervalId = setInterval(() => updatePosition(), 1000); // Update position every second
-
-        document.getElementById('timelapse').addEventListener('click', function () {
-            clearInterval(intervalId); // Clear the original interval
-            virtualTime = new Date();
-            virtualTime.setHours(6, 0, 0, 0); // Start at 6am
-            intervalId = setInterval(() => updatePosition(true), 100); // Start the time-lapse
-        });
-
-        document.getElementById('set-time').addEventListener('click', function () {
-            const timeInput = document.getElementById('time-input');
-            const [hours, minutes] = timeInput.value.split(':').map(Number);
-            overrideTime = new Date();
-            overrideTime.setHours(hours, minutes, 0, 0);
-            updatePosition();
-        });
-
-    </script>
+    </section>
+    <footer class="footer04_component">
+        <div class="page-padding-2">
+            <div class="container-large-2">
+                <div class="padding-vertical-xlarge">
+                    <div class="d-grid footer04_top-wrapper">
+                        <a href="#" class="footer04_logo-link w-inline-block">
+                            <div class="logo_component">
+                                <div class="logo_logomark">
+                                    <img src="/docs/assets/Icon_PNG.png" loading="eager" height="" alt="Logo"
+                                        class="styleguide_logomark-bg">
+                                </div>
+                            </div>
+                        </a>
+                        <div class="d-grid footer04_link-list">
+                            <a href="#" class="footer04_link text-link w-inline-block">
+                                <div>Overview</div>
+                            </a><a href="#" class="footer04_link text-link w-inline-block">
+                                <div>Features</div>
+                            </a><a href="#" class="footer04_link text-link w-inline-block">
+                                <div>Pricing</div>
+                            </a><a href="#" class="footer04_link text-link w-inline-block">
+                                <div>Careers</div>
+                            </a><a href="#" class="footer04_link text-link w-inline-block">
+                                <div>Help</div>
+                            </a><a href="#" class="footer04_link text-link w-inline-block">
+                                <div>Privacy</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
 </body>
 
 </html>
