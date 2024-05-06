@@ -751,61 +751,6 @@
             "type": "Button",
             "translatedName": "Button",
             "properties": {
-                "Text": "Locations Visited",
-                "TextColor": "#FFFFFF",
-                "FontSize": 16,
-                "Font": "",
-                "CustomFont": "",
-                "BackgroundColor": "rgba(93, 122, 252, 100)",
-                "Height": 50,
-                "Width": 150,
-                "Visible": true,
-                "X": 38,
-                "Y": 333,
-                "RelativeX": 38,
-                "RelativeY": 333,
-                "ResizeMode": "STRETCH",
-                "style": {
-                    "marginTop": 0,
-                    "marginBottom": 0,
-                    "marginLeft": 0,
-                    "marginRight": 0,
-                    "paddingTop": 0,
-                    "paddingBottom": 0,
-                    "paddingLeft": 0,
-                    "paddingRight": 0,
-                    "borderRadius": 15,
-                    "shadowColor": "rgba(0, 0, 0, 0)",
-                    "shadowOpacity": 0,
-                    "scaledShadowOpacity": 0,
-                    "shadowRadius": 0,
-                    "shadowOffset": {
-                        "width": 0,
-                        "height": 0
-                    },
-                    "position": "absolute",
-                    "left": "9.6%",
-                    "top": "61.22797976011994%",
-                    "display": "flex"
-                },
-                "FontBold": false,
-                "FontItalic": false,
-                "Raised": false,
-                "Disabled": false,
-                "ParentId": "570fd745-230f-4980-b826-5589907e6dc5",
-                "position": "absolute",
-                "edgeOffsets": 333
-            },
-            "children": [],
-            "id": "0ce5aa72-bffd-4772-a557-1e38c3c196bf",
-            "thunkableVersion": 452,
-            "bindings": null,
-            "name": "locationvisitedButton"
-        },
-        {
-            "type": "Button",
-            "translatedName": "Button",
-            "properties": {
                 "Text": "Friends",
                 "TextColor": "#FFFFFF",
                 "FontSize": 16,
@@ -816,9 +761,9 @@
                 "Width": 150,
                 "Visible": true,
                 "X": 37,
-                "Y": 408,
+                "Y": 365,
                 "RelativeX": 37,
-                "RelativeY": 408,
+                "RelativeY": 365,
                 "ResizeMode": "STRETCH",
                 "style": {
                     "marginTop": 0,
@@ -849,7 +794,7 @@
                 "Disabled": false,
                 "ParentId": "570fd745-230f-4980-b826-5589907e6dc5",
                 "position": "absolute",
-                "edgeOffsets": 408
+                "edgeOffsets": 365
             },
             "children": [],
             "id": "3d71d4c1-c1bf-46df-be38-ac8180b7cc59",
@@ -1161,9 +1106,9 @@
                 "Width": 150,
                 "Visible": true,
                 "X": 37,
-                "Y": 483,
+                "Y": 459,
                 "RelativeX": 37,
-                "RelativeY": 483,
+                "RelativeY": 459,
                 "ResizeMode": "STRETCH",
                 "style": {
                     "marginTop": 0,
@@ -1194,7 +1139,7 @@
                 "Disabled": false,
                 "ParentId": "570fd745-230f-4980-b826-5589907e6dc5",
                 "position": "absolute",
-                "edgeOffsets": 483
+                "edgeOffsets": 459.99999999999994
             },
             "children": [],
             "id": "b7af923b-6d4d-4b47-99dc-c43f19fa6e0e",
