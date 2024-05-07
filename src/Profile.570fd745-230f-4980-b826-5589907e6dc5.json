@@ -50,7 +50,7 @@
             "type": "Image",
             "translatedName": "Image",
             "properties": {
-                "Picture": "White_round_gear.jpg",
+                "Picture": "profile-settings-icon.svg",
                 "resizeMode": "stretch",
                 "Height": 44,
                 "Width": 44,
@@ -201,7 +201,7 @@
                             "translatedName": "Label",
                             "reactType": "Text",
                             "properties": {
-                                "Text": "Set a name in settings",
+                                "Text": "Your Username is not set. Click to change",
                                 "FontSize": 16,
                                 "Font": "Ubuntu",
                                 "CustomFont": "",
@@ -255,7 +255,7 @@
                                 "ParentId": "570fd745-230f-4980-b826-5589907e6dc5",
                                 "position": "absolute",
                                 "edgeOffsets": 377,
-                                "children": "Set a name in settings"
+                                "children": "Your Username is not set. Click to change"
                             },
                             "children": [],
                             "id": "e85b2e92-f4e0-4e5e-8b84-7744f9d3c7d8",
@@ -320,9 +320,9 @@
                             "translatedName": "Label",
                             "reactType": "Text",
                             "properties": {
-                                "Text": "Set a fullname in settings",
+                                "Text": "Your Name is not set. Click to change",
                                 "FontSize": 16,
-                                "Font": "",
+                                "Font": "Ubuntu",
                                 "CustomFont": "",
                                 "LineHeight": 1,
                                 "Color": "rgba(255, 255, 255, 1)",
@@ -374,7 +374,7 @@
                                 "ParentId": "570fd745-230f-4980-b826-5589907e6dc5",
                                 "position": "absolute",
                                 "edgeOffsets": 370,
-                                "children": "Set a fullname in settings"
+                                "children": "Your Name is not set. Click to change"
                             },
                             "children": [],
                             "id": "299533b6-1fa0-46cb-9006-4871e29b25cf",
@@ -396,9 +396,9 @@
             "translatedName": "Label",
             "reactType": "Text",
             "properties": {
-                "Text": "Set a status",
+                "Text": "Your Bio is not set. Click to change",
                 "FontSize": 16,
-                "Font": "",
+                "Font": "Ubuntu",
                 "CustomFont": "",
                 "LineHeight": 1,
                 "Color": "rgba(255, 255, 255, 1)",
@@ -450,7 +450,7 @@
                 "ParentId": "570fd745-230f-4980-b826-5589907e6dc5",
                 "position": "absolute",
                 "edgeOffsets": 291,
-                "children": "Set a status"
+                "children": "Your Bio is not set. Click to change"
             },
             "children": [],
             "id": "69700525-28f0-467a-b50e-a997471240b3",
@@ -759,13 +759,13 @@
             "translatedName": "Image",
             "properties": {
                 "resizeMode": "stretch",
-                "Height": 100,
-                "Width": 100,
+                "Height": 102,
+                "Width": 98,
                 "Visible": true,
-                "X": 43,
-                "Y": 64,
-                "RelativeX": 43,
-                "RelativeY": 64,
+                "X": 31.99652862548828,
+                "Y": 63.99305725097656,
+                "RelativeX": 31.99652862548828,
+                "RelativeY": 63.99305725097656,
                 "ResizeMode": "STRETCH",
                 "style": {
                     "marginTop": 0,
@@ -787,12 +787,16 @@
                     "position": "absolute",
                     "left": "16.266666666666666%",
                     "top": "12.502342578710644%",
-                    "display": "flex"
+                    "display": "flex",
+                    "borderRadius": 50,
+                    "backgroundColor": "rgba(0, 0, 0, 0)"
                 },
                 "capInsets": {},
                 "ParentId": "570fd745-230f-4980-b826-5589907e6dc5",
                 "position": "absolute",
-                "edgeOffsets": 64.99999999999999
+                "edgeOffsets": 63.99305725097656,
+                "Picture": "profile-user-filled.png",
+                "BackgroundColor": "rgba(0, 0, 0, 0)"
             },
             "children": [],
             "id": "d00a0956-10ea-4799-9c4b-a399079c0594",
@@ -803,19 +807,19 @@
             "type": "Button",
             "translatedName": "Button",
             "properties": {
-                "Text": "Friends",
+                "Text": "Friends List",
                 "TextColor": "#FFFFFF",
                 "FontSize": 16,
-                "Font": "",
+                "Font": "Ubuntu",
                 "CustomFont": "",
-                "BackgroundColor": "rgba(245, 166, 35, 1)",
+                "BackgroundColor": "rgba(244, 190, 92, 1)",
                 "Height": 50,
                 "Width": 150,
                 "Visible": true,
-                "X": 18,
-                "Y": 435,
-                "RelativeX": 18,
-                "RelativeY": 435,
+                "X": 32,
+                "Y": 409,
+                "RelativeX": 32,
+                "RelativeY": 409,
                 "ResizeMode": "STRETCH",
                 "style": {
                     "marginTop": 0,
@@ -846,7 +850,7 @@
                 "Disabled": false,
                 "ParentId": "570fd745-230f-4980-b826-5589907e6dc5",
                 "position": "absolute",
-                "edgeOffsets": 435.00000000000006
+                "edgeOffsets": 409
             },
             "children": [],
             "id": "3d71d4c1-c1bf-46df-be38-ac8180b7cc59",
