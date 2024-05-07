@@ -529,7 +529,7 @@
                             "children": [],
                             "id": "5539c296-1aa0-4b13-8e34-c65da2946c43",
                             "thunkableVersion": 452,
-                            "name": "usernameInput"
+                            "name": "nameInput"
                         }
                     ],
                     "id": "30841a0b-b419-4766-9028-cc3a3fd1eda1",
@@ -710,7 +710,7 @@
                             "children": [],
                             "id": "cd9eb728-0f7e-49a8-8adb-36879d76b666",
                             "thunkableVersion": 452,
-                            "name": "name_Input"
+                            "name": "username_Input1"
                         }
                     ],
                     "id": "645d7ffe-f208-4525-8f63-2d43296b4429",
