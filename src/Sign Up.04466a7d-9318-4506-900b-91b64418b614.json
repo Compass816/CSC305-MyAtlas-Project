@@ -125,7 +125,7 @@
                     "type": "Button",
                     "translatedName": "Button",
                     "properties": {
-                        "Text": "Reset Password",
+                        "Text": "Forgot Password?",
                         "TextColor": "#FFFFFF",
                         "FontSize": 21,
                         "Font": "Ubuntu",
@@ -197,7 +197,7 @@
                         "style": {
                             "color": "rgba(0, 0, 0, 1)",
                             "fontSize": 18,
-                            "fontStyle": "normal",
+                            "fontStyle": "italic",
                             "textShadowOffset": {},
                             "letterSpacing": 0,
                             "textDecorationLine": "none",
@@ -234,7 +234,8 @@
                         "ParentId": "04466a7d-9318-4506-900b-91b64418b614",
                         "position": "absolute",
                         "edgeOffsets": 560,
-                        "children": ""
+                        "children": "",
+                        "FontStyle": "italic"
                     },
                     "children": [],
                     "id": "8464b6c4-764c-446e-aea0-d73625f69125",
@@ -247,7 +248,7 @@
                     "properties": {
                         "Text": "Sign Up",
                         "TextColor": "#FFFFFF",
-                        "FontSize": 16,
+                        "FontSize": 21,
                         "Font": "",
                         "CustomFont": "",
                         "BackgroundColor": "rgba(244, 190, 92, 1)",

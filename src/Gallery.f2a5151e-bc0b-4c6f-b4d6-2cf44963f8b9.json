@@ -54,7 +54,7 @@
             "properties": {
                 "Height": 665,
                 "Width": 385,
-                "Visible": true,
+                "Visible": false,
                 "X": -37,
                 "Y": -332,
                 "RelativeX": -37,
@@ -85,7 +85,7 @@
                     "position": "absolute",
                     "left": "35.462960649655%",
                     "top": "71.40374349656554%",
-                    "display": "flex",
+                    "display": "none",
                     "flexDirection": "column",
                     "justifyContent": "center",
                     "alignItems": "center"
