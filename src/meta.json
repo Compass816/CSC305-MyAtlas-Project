@@ -512,14 +512,14 @@
                         ],
                         "ios": [
                             {
-                                "name": "NSPhotoLibraryUsageDescription",
-                                "label": "Photos",
-                                "hint": "Describe why your app uses photos."
-                            },
-                            {
                                 "name": "NSCameraUsageDescription",
                                 "label": "Camera",
                                 "hint": "Describe why your app uses the camera."
+                            },
+                            {
+                                "name": "NSPhotoLibraryUsageDescription",
+                                "label": "Photos",
+                                "hint": "Describe why your app uses photos."
                             }
                         ]
                     },
@@ -896,7 +896,7 @@
             "customProperties": [],
             "modules": [],
             "usesDragDropUi": true,
-            "totalCopy": "0",
+            "totalCopy": "3",
             "totalStar": "0",
             "starAction": "star",
             "variables": {
