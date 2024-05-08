@@ -750,9 +750,7 @@
                 "cloudinaryAPISecret": null,
                 "permissions": {
                     "ios": {
-                        "usageDescriptions": {
-                            "NSLocationWhenInUseUsageDescription": ""
-                        }
+                        "usageDescriptions": {}
                     }
                 },
                 "googleMapAPIKeyAndroid": "AIzaSyD07keM2Mg2xL0ZzN8UjC-yz0nslWYvWGQ",
@@ -811,9 +809,7 @@
                 "cloudinaryAPISecret": null,
                 "permissions": {
                     "ios": {
-                        "usageDescriptions": {
-                            "NSLocationWhenInUseUsageDescription": ""
-                        }
+                        "usageDescriptions": {}
                     }
                 },
                 "googleMapAPIKeyAndroid": "AIzaSyD07keM2Mg2xL0ZzN8UjC-yz0nslWYvWGQ",
@@ -1158,11 +1154,6 @@
                     "scope": "APP",
                     "name": "friendRequests",
                     "screenId": "d2021467-a413-4be5-9e2c-c988b3a144a9"
-                },
-                "e60303f4-9278-4ee9-9bc9-f5eb46308e14": {
-                    "scope": "APP",
-                    "name": "c",
-                    "screenId": "06028a38-f9c7-4ca2-87c9-7242635840d6"
                 }
             },
             "defaultDesignerDevice": "PHONE",
