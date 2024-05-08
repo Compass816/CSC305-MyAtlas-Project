@@ -643,6 +643,17 @@
                         "location": true,
                         "iap": false
                     }
+                },
+                "d2021467-a413-4be5-9e2c-c988b3a144a9": {
+                    "xml": "",
+                    "permissions": {
+                        "android": [],
+                        "ios": []
+                    },
+                    "enabledFeatures": {
+                        "location": true,
+                        "iap": false
+                    }
                 }
             },
             "categories": [
@@ -685,13 +696,16 @@
                     },
                     {
                         "id": "d6936d41-dd05-4d98-a005-baa15dac7621"
+                    },
+                    {
+                        "id": "d2021467-a413-4be5-9e2c-c988b3a144a9"
                     }
                 ]
             },
             "figmaComponents": {},
             "description": "MyAtlas is a travel app where you can share your adventures! See all your locations visited, share photos with your friends, and build your profile.",
-            "icon": "https://x.thunkable.com/project/663af2755567b955af88a0b4/getasset/663af2755567b955af88a113",
-            "projectName": "MyAtlas CURRENT",
+            "icon": "https://x.thunkable.com/project/663aeadb5567b955af87e92b/getasset/663aeadb5567b955af87e96d",
+            "projectName": "MyAtlas FRIENDS",
             "settings": {
                 "teamId": null,
                 "appName": "MyAtlas",
@@ -699,12 +713,12 @@
                     "name": "Icon.png",
                     "originalname": "Icon.png",
                     "externalStorageType": "GCS",
-                    "externalName": "users/65a6efce59b6406a48db8dc6/projects/663af2755567b955af88a0b4/assets/663af2755567b955af88a113",
-                    "backendURI": "/project/663af2755567b955af88a0b4/getasset/663af2755567b955af88a113",
+                    "externalName": "users/65b16ebd67db1a7c7cd418a9/projects/663aeadb5567b955af87e92b/assets/663aeadb5567b955af87e96d",
+                    "backendURI": "/project/663aeadb5567b955af87e92b/getasset/663aeadb5567b955af87e96d",
                     "size": "390741",
                     "mimetype": "image/png",
                     "encoding": "7bit",
-                    "_id": "663af2755567b955af88a113",
+                    "_id": "663aeadb5567b955af87e96d",
                     "createdAt": "2024-04-15T18:22:43.908Z",
                     "updatedAt": "2024-04-15T18:22:43.908Z",
                     "__v": 0
@@ -712,9 +726,9 @@
                 "autoIncrementVersion": true,
                 "ignoreNotchArea": false,
                 "notchAreaColor": null,
-                "androidVersionName": "5",
-                "androidVersionCode": 5,
-                "iosVersionNumber": "5",
+                "androidVersionName": "6",
+                "androidVersionCode": 6,
+                "iosVersionNumber": "6",
                 "iosBuildNumber": "1",
                 "firebaseAPIKey": "AIzaSyAbi3SRniOs71T6iGBjxtyGeiRBeiBF-24",
                 "firebaseDatabaseURL": "https://project-71725-default-rtdb.firebaseio.com/",
@@ -758,12 +772,12 @@
                     "name": "Icon.png",
                     "originalname": "Icon.png",
                     "externalStorageType": "GCS",
-                    "externalName": "users/65a6efce59b6406a48db8dc6/projects/663af2755567b955af88a0b4/assets/663af2755567b955af88a113",
-                    "backendURI": "/project/663af2755567b955af88a0b4/getasset/663af2755567b955af88a113",
+                    "externalName": "users/65b16ebd67db1a7c7cd418a9/projects/663aeadb5567b955af87e92b/assets/663aeadb5567b955af87e96d",
+                    "backendURI": "/project/663aeadb5567b955af87e92b/getasset/663aeadb5567b955af87e96d",
                     "size": "390741",
                     "mimetype": "image/png",
                     "encoding": "7bit",
-                    "_id": "663af2755567b955af88a113",
+                    "_id": "663aeadb5567b955af87e96d",
                     "createdAt": "2024-04-15T18:22:43.908Z",
                     "updatedAt": "2024-04-15T18:22:43.908Z",
                     "__v": 0
@@ -771,9 +785,9 @@
                 "autoIncrementVersion": true,
                 "ignoreNotchArea": false,
                 "notchAreaColor": null,
-                "androidVersionName": "5",
-                "androidVersionCode": 5,
-                "iosVersionNumber": "5",
+                "androidVersionName": "3",
+                "androidVersionCode": 3,
+                "iosVersionNumber": "3",
                 "iosBuildNumber": "1",
                 "firebaseAPIKey": "AIzaSyAbi3SRniOs71T6iGBjxtyGeiRBeiBF-24",
                 "firebaseDatabaseURL": "https://project-71725-default-rtdb.firebaseio.com/",
@@ -1121,10 +1135,25 @@
                     "name": "color_theme_choice",
                     "screenId": "8c83fa84-0f34-4465-92fe-0e77d0337c78"
                 },
-                "e60303f4-9278-4ee9-9bc9-f5eb46308e14": {
+                "a63b354c-ec0d-43c8-9ca4-93e1fbb2ab60": {
                     "scope": "APP",
-                    "name": "c",
-                    "screenId": "06028a38-f9c7-4ca2-87c9-7242635840d6"
+                    "name": "targetFriendID",
+                    "screenId": "40ceff75-5060-4e24-821e-3ee569e83b16"
+                },
+                "50327656-f87e-4ead-81a6-4f31eb9c6c2c": {
+                    "scope": "APP",
+                    "name": "filteredLst",
+                    "screenId": "40ceff75-5060-4e24-821e-3ee569e83b16"
+                },
+                "8214a892-64a0-43c9-9234-58c635d67439": {
+                    "scope": "APP",
+                    "name": "targetFriendID",
+                    "screenId": "d2021467-a413-4be5-9e2c-c988b3a144a9"
+                },
+                "cd157ae1-4b4b-4fec-a75e-d16cb12c8203": {
+                    "scope": "APP",
+                    "name": "friendRequests",
+                    "screenId": "d2021467-a413-4be5-9e2c-c988b3a144a9"
                 }
             },
             "defaultDesignerDevice": "PHONE",
