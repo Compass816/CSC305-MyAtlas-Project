@@ -43,7 +43,8 @@
         "DesignerHeight": 667,
         "DesignerWidth": 375,
         "ResponsiveWidth": 375,
-        "isSimple": true
+        "isSimple": true,
+        "BackgroundPicture": "day.png"
     },
     "children": [
         {
@@ -366,7 +367,7 @@
                     "shadowColor": "rgba(0, 0, 0, 0)",
                     "shadowOpacity": 0,
                     "scaledShadowOpacity": 0,
-                    "shadowRadius": 0,
+                    "shadowRadius": 50,
                     "shadowOffset": {
                         "width": 0,
                         "height": 0
@@ -374,7 +375,8 @@
                     "position": "absolute",
                     "left": "84.93333333333334%",
                     "top": "73.6413043478261%",
-                    "display": "flex"
+                    "display": "flex",
+                    "borderRadius": 50
                 },
                 "ParentId": "d6936d41-dd05-4d98-a005-baa15dac7621",
                 "position": "absolute",
@@ -455,24 +457,24 @@
             "reactType": "Text",
             "properties": {
                 "Text": "Comments",
-                "FontSize": 22,
+                "FontSize": 24,
                 "Font": "Ubuntu",
                 "CustomFont": "",
                 "LineHeight": 1,
-                "Color": "rgba(0, 0, 0, 1)",
+                "Color": "rgba(255, 255, 255, 1)",
                 "FontWeight": "bold",
                 "TextAlign": "center",
-                "Height": 45,
-                "Width": 311,
+                "Height": 41,
+                "Width": 161,
                 "Visible": true,
-                "X": 52,
-                "Y": 13,
-                "RelativeX": 52,
-                "RelativeY": 13,
+                "X": 112,
+                "Y": 15,
+                "RelativeX": 112,
+                "RelativeY": 15,
                 "ResizeMode": "STRETCH",
                 "style": {
-                    "color": "rgba(0, 0, 0, 1)",
-                    "fontSize": 22,
+                    "color": "rgba(255, 255, 255, 1)",
+                    "fontSize": 24,
                     "fontStyle": "normal",
                     "letterSpacing": 0,
                     "textDecorationLine": "none",
@@ -510,7 +512,7 @@
                 },
                 "ParentId": "d6936d41-dd05-4d98-a005-baa15dac7621",
                 "position": "absolute",
-                "edgeOffsets": 13,
+                "edgeOffsets": 15.999999999999998,
                 "children": "Comments"
             },
             "children": [],
