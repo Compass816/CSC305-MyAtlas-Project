@@ -39,20 +39,11 @@
         "TabNavigationOptions": {
             "tabBarVisible": true
         },
-        "TabNavigatorIcon": {},
-        "DrawerNavigationOptions": {},
-        "StackNavigationOptions": {
-            "headerStyle": {}
-        },
         "ScreenOrientation": "portrait",
         "DesignerHeight": 667,
         "DesignerWidth": 375,
         "ResponsiveWidth": 375,
-        "isSimple": true,
-        "navigationOptions": {
-            "headerStyle": {}
-        },
-        "tabNavigationOptions": {}
+        "isSimple": true
     },
     "children": [
         {
@@ -385,7 +376,6 @@
                     "top": "73.6413043478261%",
                     "display": "flex"
                 },
-                "capInsets": {},
                 "ParentId": "d6936d41-dd05-4d98-a005-baa15dac7621",
                 "position": "absolute",
                 "edgeOffsets": 540
@@ -413,7 +403,6 @@
                     "color": "rgba(0, 0, 0, 1)",
                     "fontSize": 16,
                     "fontStyle": "normal",
-                    "textShadowOffset": {},
                     "letterSpacing": 0,
                     "textDecorationLine": "none",
                     "textDecorationStyle": "solid",
@@ -485,7 +474,6 @@
                     "color": "rgba(0, 0, 0, 1)",
                     "fontSize": 22,
                     "fontStyle": "normal",
-                    "textShadowOffset": {},
                     "letterSpacing": 0,
                     "textDecorationLine": "none",
                     "textDecorationStyle": "solid",
@@ -566,7 +554,6 @@
                     "top": "8.025674662668665%",
                     "display": "flex"
                 },
-                "capInsets": {},
                 "ParentId": "04466a7d-9318-4506-900b-91b64418b614",
                 "position": "absolute",
                 "edgeOffsets": 0
@@ -733,7 +720,6 @@
                                             "borderRadius": 23,
                                             "position": "relative"
                                         },
-                                        "capInsets": {},
                                         "ItemElementId": "main_image"
                                     },
                                     "children": [],
@@ -754,7 +740,6 @@
                             ],
                             "id": "6dd098c4-fb11-476b-b579-3ecb9e2b68a5",
                             "thunkableVersion": 454,
-                            "bindings": {},
                             "name": "ImageWrapper"
                         },
                         {
@@ -892,7 +877,6 @@
                                                             "color": "rgba(0, 0, 0, 1)",
                                                             "fontSize": 16,
                                                             "fontStyle": "normal",
-                                                            "textShadowOffset": {},
                                                             "letterSpacing": 0,
                                                             "textDecorationLine": "none",
                                                             "textDecorationStyle": "solid",
@@ -947,7 +931,6 @@
                                             ],
                                             "id": "33b021c7-a3a0-4b81-aff7-bfbef9dab37d",
                                             "thunkableVersion": 454,
-                                            "bindings": {},
                                             "name": "TitleWrapper"
                                         },
                                         {
@@ -1007,7 +990,6 @@
                                                             "color": "rgba(155, 155, 155, 0.8)",
                                                             "fontSize": 15,
                                                             "fontStyle": "normal",
-                                                            "textShadowOffset": {},
                                                             "letterSpacing": 0,
                                                             "textDecorationLine": "none",
                                                             "textDecorationStyle": "solid",
@@ -1062,13 +1044,11 @@
                                             ],
                                             "id": "a31aa6bf-a335-4ea6-a7c4-e8181efeb249",
                                             "thunkableVersion": 454,
-                                            "bindings": {},
                                             "name": "SubtitleWrapper"
                                         }
                                     ],
                                     "id": "cc6e85de-590e-410e-ae10-02425ba54e80",
                                     "thunkableVersion": 454,
-                                    "bindings": {},
                                     "name": "TitleAndSubtitleWrapper"
                                 },
                                 {
@@ -1128,7 +1108,6 @@
                                                     "color": "rgba(0, 0, 0, 1)",
                                                     "fontSize": 15,
                                                     "fontStyle": "normal",
-                                                    "textShadowOffset": {},
                                                     "letterSpacing": 0,
                                                     "textDecorationLine": "none",
                                                     "textDecorationStyle": "solid",
@@ -1182,19 +1161,16 @@
                                     ],
                                     "id": "d2b52b1f-398a-4930-ab0a-cee5db904667",
                                     "thunkableVersion": 454,
-                                    "bindings": {},
                                     "name": "TextWrapper"
                                 }
                             ],
                             "id": "84daf630-b501-4645-b997-2c2cbc5b8e28",
                             "thunkableVersion": 454,
-                            "bindings": {},
                             "name": "TitleAndTextWrapper"
                         }
                     ],
                     "id": "eb39e795-696f-4ca6-a93c-b720c95956cb",
                     "thunkableVersion": 454,
-                    "bindings": {},
                     "name": "LayoutWrapper"
                 }
             ],
