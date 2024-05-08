@@ -487,6 +487,38 @@
                     "__v": 0,
                     "signedUrl": "https://storage.googleapis.com/thunkable-x-production/users/65a6efce59b6406a48db8dc6/projects/663af2755567b955af88a0b4/assets/663af2755567b955af88a0ef?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=thunkable-ios%40thunkable-ios.iam.gserviceaccount.com%2F20240508%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20240508T033324Z&X-Goog-Expires=172800&X-Goog-SignedHeaders=host&X-Goog-Signature=64065f25651d02d31c79d7405dcee1920284ea6922a798b99ceb83d07913246e8836e49476e4f97eb6b48de4cab7ba650e68f3f462a8124d2a080cab616942b3f54377acc715688b9c61e331f734d0e27a800423c2596b5d9266d805c4f34730c81e72b3cd6be397d0c97e3eba3f684c2c0627411cd8a63b5e3d277de1416619f06f8a83bcd0503af1857cbbe9037113c6e085830bb59cda37b71010f6eafb810e51b1068d68a34907d341b034eba6cf63da59e68b1a3296692e6a395b16e15bba81e67b8b78ab840928cc4837236ba1164a45c5775f7d039b0c4111112e7f9b39b43bff47f1ed12d8d9c7e5fb2369ef84eb2f8d44120adadd5e12ca93e8c0c6",
                     "signedUrlExpirationTime": 1715312004978
+                },
+                "663bc5f1ac0ef8f03ce58b4e": {
+                    "externalStorageType": "GCS",
+                    "_id": "663bc5f1ac0ef8f03ce58b4e",
+                    "size": "816",
+                    "mimetype": "image/png",
+                    "encoding": "7bit",
+                    "originalname": "marker2.png",
+                    "backendURI": "/project/663ad36a3036ddef868a6916/getasset/663bc5f1ac0ef8f03ce58b4e",
+                    "name": "marker2.png",
+                    "externalName": "users/65b16ebd67db1a7c7cd418a9/projects/663ad36a3036ddef868a6916/assets/663bc5f1ac0ef8f03ce58b4e",
+                    "createdAt": "2024-05-08T18:35:29.846Z",
+                    "updatedAt": "2024-05-08T18:35:29.846Z",
+                    "__v": 0,
+                    "signedUrl": "https://storage.googleapis.com/thunkable-x-production/users/65b16ebd67db1a7c7cd418a9/projects/663ad36a3036ddef868a6916/assets/663bc5f1ac0ef8f03ce58b4e?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=thunkable-ios%40thunkable-ios.iam.gserviceaccount.com%2F20240508%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20240508T183529Z&X-Goog-Expires=172800&X-Goog-SignedHeaders=host&X-Goog-Signature=985f90ce3c62f693d8dcf692cfcab5672bef863fd1ccfe8a1399ee01927dc8c48c464d243fb9ddaca6ffb2dee104fe2cc0f6c1fc3db729554803869ebf759404e2abea25f9e2d5dbbdfa9569ba3ebedba0eb45eb2f6763e83bc77cf692cf89e01383df581814a0371db67ce7adefd568b116c851ca24b44a4fae8ebd4565ea0d4bd288128b14e874bb769518303cc88f6e056da4873dd22879282d83e5369d2bc645337953e61b3828f3af3410e51e3438a9f036651b60af3d57e1a1588e5e047a325af7fc5d78f2e642f590cee7dfd12fa5c00f146b6fb424ae266e889f07d1c8e01751e2ca63d4f62a172f27fcc5fe57ec8a0acba16ee4cfc664f5476a866d",
+                    "signedUrlExpirationTime": 1715366129873
+                },
+                "663bd0d0ac0ef8f03ce73e0d": {
+                    "externalStorageType": "GCS",
+                    "_id": "663bd0d0ac0ef8f03ce73e0d",
+                    "size": "845",
+                    "mimetype": "image/png",
+                    "encoding": "7bit",
+                    "originalname": "marker3.png",
+                    "backendURI": "/project/663ad36a3036ddef868a6916/getasset/663bd0d0ac0ef8f03ce73e0d",
+                    "name": "marker3.png",
+                    "externalName": "users/65b16ebd67db1a7c7cd418a9/projects/663ad36a3036ddef868a6916/assets/663bd0d0ac0ef8f03ce73e0d",
+                    "createdAt": "2024-05-08T19:21:52.545Z",
+                    "updatedAt": "2024-05-08T19:21:52.545Z",
+                    "__v": 0,
+                    "signedUrl": "https://storage.googleapis.com/thunkable-x-production/users/65b16ebd67db1a7c7cd418a9/projects/663ad36a3036ddef868a6916/assets/663bd0d0ac0ef8f03ce73e0d?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=thunkable-ios%40thunkable-ios.iam.gserviceaccount.com%2F20240508%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20240508T192152Z&X-Goog-Expires=172800&X-Goog-SignedHeaders=host&X-Goog-Signature=30c5e402a4dca67716830e41a103442894aa081be4479fd1a8b0e369b63b8b14cf5f9e637fabaca23bc062546f825b22afafef47a10f3c2e754c06c248ab8162d9660505f96c293d9fec2d7703c86d3aaa7f8e6500019a2e330f6c0315c2d8ddc0f21e54c3d12c887ad9a4c9928c46a9225b8c2a32f0de97e1c8d93c33a261fc94668b0a78b9a86e3293a1416a10943af06674cc42e46227b7b8b5890943ccea9d88db686b6ba74719df3e6dff92254ae6cd70df1230fc4b7515c985799bf20b790029e8a7c5494ba057c34b7863a94a2c8a98a22e583e0105d278cf691f20306ae138504e52ad070e98dfb14dc6e030e6c07cc038b80c7f503d053ef44a5ffa",
+                    "signedUrlExpirationTime": 1715368912570
                 }
             },
             "backendUpgradeVersion": 25,
@@ -726,9 +758,9 @@
                 "autoIncrementVersion": true,
                 "ignoreNotchArea": false,
                 "notchAreaColor": null,
-                "androidVersionName": "7",
-                "androidVersionCode": 7,
-                "iosVersionNumber": "7",
+                "androidVersionName": "8",
+                "androidVersionCode": 8,
+                "iosVersionNumber": "8",
                 "iosBuildNumber": "1",
                 "firebaseAPIKey": "AIzaSyAbi3SRniOs71T6iGBjxtyGeiRBeiBF-24",
                 "firebaseDatabaseURL": "https://project-71725-default-rtdb.firebaseio.com/",
@@ -750,7 +782,9 @@
                 "cloudinaryAPISecret": null,
                 "permissions": {
                     "ios": {
-                        "usageDescriptions": {}
+                        "usageDescriptions": {
+                            "NSLocationWhenInUseUsageDescription": ""
+                        }
                     }
                 },
                 "googleMapAPIKeyAndroid": "AIzaSyD07keM2Mg2xL0ZzN8UjC-yz0nslWYvWGQ",
@@ -785,9 +819,9 @@
                 "autoIncrementVersion": true,
                 "ignoreNotchArea": false,
                 "notchAreaColor": null,
-                "androidVersionName": "7",
-                "androidVersionCode": 7,
-                "iosVersionNumber": "7",
+                "androidVersionName": "8",
+                "androidVersionCode": 8,
+                "iosVersionNumber": "8",
                 "iosBuildNumber": "1",
                 "firebaseAPIKey": "AIzaSyAbi3SRniOs71T6iGBjxtyGeiRBeiBF-24",
                 "firebaseDatabaseURL": "https://project-71725-default-rtdb.firebaseio.com/",
@@ -809,7 +843,9 @@
                 "cloudinaryAPISecret": null,
                 "permissions": {
                     "ios": {
-                        "usageDescriptions": {}
+                        "usageDescriptions": {
+                            "NSLocationWhenInUseUsageDescription": ""
+                        }
                     }
                 },
                 "googleMapAPIKeyAndroid": "AIzaSyD07keM2Mg2xL0ZzN8UjC-yz0nslWYvWGQ",
@@ -1011,7 +1047,7 @@
             "customProperties": [],
             "modules": [],
             "usesDragDropUi": true,
-            "totalCopy": "0",
+            "totalCopy": "4",
             "totalStar": "0",
             "starAction": "star",
             "variables": {
@@ -1154,6 +1190,11 @@
                     "scope": "APP",
                     "name": "friendRequests",
                     "screenId": "d2021467-a413-4be5-9e2c-c988b3a144a9"
+                },
+                "9c63d6b0-49e5-4ccd-ad47-01f3ae5bca50": {
+                    "scope": "APP",
+                    "name": "map_marker_image",
+                    "screenId": "06028a38-f9c7-4ca2-87c9-7242635840d6"
                 }
             },
             "defaultDesignerDevice": "PHONE",
