@@ -2,15 +2,15 @@ https://docs.google.com/presentation/d/1FnrasSEg2YHDB0dDhD9bJw4gEFp8Z2L-4RusNTz7
 - Metric 1: NPS collected from a screen in our app saved to firebase
 - Metric 2: Google play store reviews
 - Metric 3: Google play store ratings
-- Metric 4: Google Analytics views per page
+- Metric 4: Engagement for interacting with a certain screeen increase a value for that user
 - Metric 5: Google Play Ads Click Through Rate
 - Metric 6: Google Analytics of daily users
 - Metric 7: Google play Store     
-- Metric 8: Google Analytics and Google play store downloads
-- Metric 9: Google Analytics for views and engaement for the new feature
+- Metric 8: Google play store downloads
+- Metric 9: If there's a spike in increase for adoption metrics for that feature
 - Metric 10: Google Analytics view acive numbers of users over a defined time period
-- Metric 11: Google Analytics user lifetime
+- Metric 11: Save the time when the user first creates their account until they delete it
 - Metric 12: Google Analytics view acive numbers of users over a defined time period
-- Metric 13: Google Analytics path exploration
-- Metric 14: Google Analytics user exploration
-- Metric 15: Google Analytics user exploration
+- Metric 13: Monitor the timestamp of when they started to the time a feature was completed.
+- Metric 14: Frequnecy at which the adoption metric increases
+- Metric 15: CTR task completion
