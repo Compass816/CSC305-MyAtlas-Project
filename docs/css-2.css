@@ -2855,6 +2855,10 @@ textarea.w-select {
     width: 100%;
 }
 
+.footer04_component {
+    margin-bottom: 0px;
+}
+
 .layout76_image-wrapper {
     background-color: var(--untitled-ui--gray50);
     width: 100%;
