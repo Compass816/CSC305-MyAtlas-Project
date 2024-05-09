@@ -1,7 +1,3 @@
-.hero {
-    overflow: hidden;
-}
-
 #movement-objects {
     position: absolute;
     z-index: 5;
@@ -125,23 +121,23 @@
 }
 
 .cloud1 {
-    background-image: url('/docs/assets/cloud1.png');
+    background-image: url('assets/cloud1.png');
 }
 
 .cloud2 {
-    background-image: url('/docs//assets/cloud2.png');
+    background-image: url('assets/cloud2.png');
 }
 
 .cloud3 {
-    background-image: url('/docs//assets/cloud3.png');
+    background-image: url('assets/cloud3.png');
 }
 
 .cloud4 {
-    background-image: url('/docs/assets/cloud4.png');
+    background-image: url('assets/cloud4.png');
 }
 
 .cloud5 {
-    background-image: url('/docs/assets/cloud5.png');
+    background-image: url('assets/cloud5.png');
 }
 
 #stars {

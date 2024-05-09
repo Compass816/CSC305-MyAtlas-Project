@@ -16,47 +16,36 @@
 </head>
 
 <body>
-    <div class="navbar01_component">
-        <div class="navbar01_container">
-            <a href="#" class="navbar01_logo-link">
+    <div class="nav_component">
+        <div class="nav_container">
+            <a href="#" class="nav_logo-link">
                 <div class="logo_component">
                     <div class="logo_logomark">
                         <img src="assets/Icon_PNG.png" loading="eager" height="" alt="Logo"
                             class="styleguide_logomark-bg">
                     </div>
-                    <h2 class="navbar01_link brand">MyAtlas</h2>
+                    <h2 class="nav_link brand">MyAtlas</h2>
                 </div>
             </a>
-            <nav role="navigation" class="navbar01_menu">
-                <div class="navbar01_menu-left">
-                    <a href="#" class="navbar01_link text-link">Home</a>
-                    <a href="#about" class="navbar01_link text-link">About</a>
-                    <a href="#features" class="navbar01_link text-link">Features</a>
+            <nav role="navigation" class="nav_menu">
+                <div class="nav_menu-left">
+                    <a href="#" class="nav_link text-link">Home</a>
+                    <a href="#about" class="nav_link text-link">About</a>
+                    <a href="#features" class="nav_link text-link">Features</a>
                     <a href="https://github.com/ry-bro-uri/csc305-project/wiki" target="_blank"
-                        class="navbar01_link text-link">Docs</a>
-                    <a href="https://youtu.be/DESenC0mjWk" target="_blank" class="navbar01_link text-link">Demo
+                        class="nav_link text-link">Docs</a>
+                    <a href="https://youtu.be/DESenC0mjWk" target="_blank" class="nav_link text-link">Demo
                         Video</a>
                 </div>
-                <div class="navbar01_menu-right">
-                    <div class="navbar01_button-wrapper">
-                        <a href="#try-now" class="button w-inline-block">
+                <div class="nav_menu-right">
+                    <div class="nav_button-wrapper">
+                        <a href="#try-now" class="button inline-block">
                             <div>Try Now</div>
                         </a>
                     </div>
                 </div>
             </nav>
-            <div class="navbar01_menu-button w-nav-button" style="-webkit-user-select: text;" aria-label="menu"
-                role="button" tabindex="0" aria-controls="w-nav-overlay-0" aria-haspopup="menu" aria-expanded="false">
-                <div class="menu-icon_component">
-                    <div class="menu-icon_line-top"></div>
-                    <div class="menu-icon_line-middle">
-                        <div class="menu-icon_line-middle-inner"></div>
-                    </div>
-                    <div class="menu-icon_line-bottom"></div>
-                </div>
-            </div>
         </div>
-        <div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div>
     </div>
     <header id="hero">
         <div class="hero__animation">
@@ -105,30 +94,32 @@
             </div>
         </section>
     </header>
-    <section class="section_layout52" id="features">
+
+    <section class="section_profile-feature no-overflow" id="features">
         <div class="page-padding">
             <div class="container-large">
                 <div class="padding-vertical-xhuge">
-                    <div class="w-layout-grid layout52_component">
-                        <div class="layout52_image-wrapper">
-                            <img src="assets/map_tablet.jpg" loading="lazy" width="1440" sizes="100vw"
-                                alt="Dashboard mockup" class="layout52_image-01 shadow-xlarge">
-                            <img src="assets/myatlas_welcome.jpg" loading="lazy" alt="iPhone mockup"
-                                class="layout52_image-02">
-                        </div>
-                        <div id="w-node-_57baa5f5-9c16-4efc-f4b0-f64288480326-6e690cf3" class="layout52_content">
+                    <div class="grid profile-feature_component">
+                        <div id="w-node-_57baa5f5-9c16-4efc-f4b0-f64288480326-6e690cf3" class="profile-feature_content">
                             <div class="heading-subheading">About</div>
                             <h2 class="heading-medium">Welcome to MyAtlas<br></h2>
                             <div class="space-xsmall"></div>
                             <div class="text-size-large">My Atlas is an app where you can share your adventures. Plot
                                 your travels on a map, share photos, and make friends!</div>
                         </div>
+                        <div class="profile-feature_image-wrapper">
+                            <img src="assets/map_tablet.jpg" loading="lazy" width="1440" sizes="100vw"
+                                alt="Dashboard mockup" class="profile-feature_image-01 shadow-xlarge">
+                            <img src="assets/myatlas_welcome.jpg" loading="lazy" alt="iPhone mockup"
+                                class="profile-feature_image-02">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="section_travel-feature">
+
+    <section class="no-overflow">
         <div class="page-padding">
             <div class="container-large">
                 <div class="padding-vertical-xhuge">
@@ -143,20 +134,23 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="w-layout-grid travel-feature_list">
+                        <div class="grid travel-feature_list">
                             <div class="travel-feature_item">
-                                <div class="travel-feature_image-wrapper phone"><img src="assets/camera.jpg"
-                                        loading="lazy" alt="" class="travel-feature_image"></div>
+                                <div class="travel-feature_image-wrapper side-img">
+                                    <img src="assets/camera.jpg" loading="lazy" alt="" class="travel-feature_image">
+                                </div>
                                 <h3 class="heading-xxsmall">Take photos with the camera</h3>
                             </div>
                             <div class="travel-feature_item">
-                                <div class="travel-feature_image-wrapper phone"><img src="assets/gallery.jpg"
-                                        loading="lazy" alt="" class="travel-feature_image"></div>
+                                <div class="travel-feature_image-wrapper center-img">
+                                    <img src="assets/gallery.jpg" loading="lazy" alt="" class="travel-feature_image">
+                                </div>
                                 <h3 class="heading-xxsmall">Post about your travels</h3>
                             </div>
                             <div class="travel-feature_item">
-                                <div class="travel-feature_image-wrapper phone"><img src="assets/map.jpg" loading="lazy"
-                                        alt="" class="travel-feature_image"></div>
+                                <div class="travel-feature_image-wrapper side-img">
+                                    <img src="assets/map.jpg" loading="lazy" alt="" class="travel-feature_image">
+                                </div>
                                 <h3 class="heading-xxsmall">See your friends posts on the map</h3>
                             </div>
                         </div>
@@ -165,18 +159,19 @@
             </div>
         </div>
     </section>
-    <section class="section_layout08">
+
+    <section class="no-overflow">
         <div class="page-padding">
             <div class="container-large">
                 <div class="padding-vertical-xhuge">
-                    <div class="w-layout-grid layout08_component">
-                        <div class="layout52_image-wrapper">
+                    <div class="grid profile-feature_component">
+                        <div class="profile-feature_image-wrapper">
                             <img src="assets/comments.jpg" loading="lazy" alt="" class="tri-image__image-1">
                             <img src="assets/profile.jpg" loading="lazy" alt="" class="tri-image__image-2">
-                            <img src="/assets/background_settings_day.jpg" loading="lazy" alt=""
+                            <img src="assets/background_settings_day.jpg" loading="lazy" alt=""
                                 class="tri-image__image-3">
                         </div>
-                        <div class="layout08_content">
+                        <div class="profile-feature_content">
                             <div class="heading-subheading">Features</div>
                             <h2 class="heading-medium">Customize Your Profile</h2>
                             <div class="space-xsmall"></div>
@@ -189,20 +184,26 @@
         </div>
         </div>
     </section>
-    <section class="banner__section" id="try-now">
-        <div class="banner__section-image">
-            <h2 class="heading-medium">Try MyAtlas Now</h2>
-            <div class="space-medium"></div>
+
+    <section class="banner-section" id="try-now">
+        <div class="banner-section_image">
+            <div class="text-align-center">
+                <div class="max-width-large">
+                    <h2 class="heading-medium text-color-white">Try MyAtlas Now</h2>
+                    </div>
+                </div>
+            </div>
         </div>
         <iframe src="https://thunkable.site/w/xYOs2O4WcuAp0uW4u4mYk" title="MyAtlas Thunkable App" height=1000 width=500
-            class="live-app"></iframe>
+            class="banner-section__live-app"></iframe>
     </section>
-    <footer class="footer04_component">
+
+    <footer class="footer_component">
         <div class="page-padding">
             <div class="container-large">
                 <div class="padding-vertical-xlarge">
-                    <div class="d-grid footer04_top-wrapper">
-                        <a href="#" class="footer04_logo-link w-inline-block">
+                    <div class="d-grid footer_top-wrapper">
+                        <a href="#" class="footer_logo-link inline-block">
                             <div class="logo_component">
                                 <div class="logo_logomark">
                                     <img src="assets/Icon_PNG.png" loading="eager" height="" alt="Logo"
@@ -210,17 +211,23 @@
                                 </div>
                             </div>
                         </a>
-                        <div class="d-grid footer04_link-list">
-                            <a href="#" class="footer04_link text-link w-inline-block">
+                        <div class="d-grid footer_link-list">
+                            <a href="#" class="footer_link text-link inline-block">
                                 <div>Home</div>
                             </a>
-                            <a href="#about" class="footer04_link text-link w-inline-block">
+                            <a href="#about" class="footer_link text-link inline-block">
                                 <div>About</div>
-                            </a><a href="#features" class="footer04_link text-link w-inline-block">
+                            </a>
+                            <a href="#features" class="footer_link text-link inline-block">
                                 <div>Features</div>
                             </a>
                             <a href="https://github.com/ry-bro-uri/csc305-project/wiki" target="_blank"
-                                classs="footer04_link text-link w-inline-block">
+                                class="footer_link text-link inline-block">
+                                <div>Docs</div>
+                            </a>
+                            <a href="https://youtu.be/DESenC0mjWk" target="_blank"
+                                class="footer_link text-link inline-block">
+                                <div>Demo Video</div>
                             </a>
                         </div>
                     </div>
