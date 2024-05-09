@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <link rel="stylesheet" type="text/css" href="css-2.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" type="text/css" href="hero.css">
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
@@ -24,18 +25,20 @@
                         <img src="/docs/assets/Icon_PNG.png" loading="eager" height="" alt="Logo"
                             class="styleguide_logomark-bg">
                     </div>
-                    <h2 class="navbar01_link brand">MyAtlas</h2>
+                    <h2 class="navbar01_link brand">Welcome to MyAtlas</h2>
                 </div>
             </a>
             <nav role="navigation" class="navbar01_menu">
                 <div class="navbar01_menu-left">
                     <a href="#" class="navbar01_link text-link">Home</a>
                     <a href="#about" class="navbar01_link text-link">About</a>
-                    <a href="" target="_blank" class="navbar01_link text-link">Docs</a>
+                    <a href="#features" class="navbar01_link text-link">Features</a>
+                    <a href="https://github.com/ry-bro-uri/csc305-project/wiki" target="_blank"
+                        class="navbar01_link text-link">Docs</a>
                 </div>
                 <div class="navbar01_menu-right">
                     <div class="navbar01_button-wrapper">
-                        <a href="#try" class="button w-inline-block">
+                        <a href="#try-now" class="button w-inline-block">
                             <div>Try Now</div>
                         </a>
                     </div>
@@ -83,7 +86,7 @@
             <div class="shooting-star"></div>
             <div class="hero__wave"></div>
         </div>
-        <section class="hero__content-wrapper">
+        <section class="hero__content-wrapper" id="about">
             <div class="page-padding">
                 <div class="container-large">
                     <div class="heroheader16_component">
@@ -105,18 +108,16 @@
             </div>
         </section>
     </header>
-    <section class="section_layout52">
+    <section class="section_layout52" id="features">
         <div class="page-padding">
             <div class="container-large">
                 <div class="padding-vertical-xhuge">
                     <div class="w-layout-grid layout52_component">
                         <div class="layout52_image-wrapper">
-                            <img src="https://assets-global.website-files.com/662ed2f6e535323a6e690ce3/662ed3f97e7dcd020405bfc1_dashboard-mockup-01.png"
-                                loading="lazy" width="1440" sizes="100vw" alt="Dashboard mockup"
-                                srcset="https://assets-global.website-files.com/662ed2f6e535323a6e690ce3/662ed3f97e7dcd020405bfc1_dashboard-mockup-01-p-500.png 500w, https://assets-global.website-files.com/662ed2f6e535323a6e690ce3/662ed3f97e7dcd020405bfc1_dashboard-mockup-01-p-800.png 800w, https://assets-global.website-files.com/662ed2f6e535323a6e690ce3/662ed3f97e7dcd020405bfc1_dashboard-mockup-01-p-1080.png 1080w, https://assets-global.website-files.com/662ed2f6e535323a6e690ce3/662ed3f97e7dcd020405bfc1_dashboard-mockup-01-p-1600.png 1600w, https://assets-global.website-files.com/662ed2f6e535323a6e690ce3/662ed3f97e7dcd020405bfc1_dashboard-mockup-01.png 2880w"
-                                class="layout52_image-01 shadow-xlarge">
-                            <img src="https://assets-global.website-files.com/662ed2f6e535323a6e690ce3/662ed3f97e7dcd020405bf9b_iphone-mockup-01.png"
-                                loading="lazy" alt="iPhone mockup" class="layout52_image-02">
+                            <img src="/docs/assets/map_tablet.jpg" loading="lazy" width="1440" sizes="100vw"
+                                alt="Dashboard mockup" class="layout52_image-01 shadow-xlarge">
+                            <img src="/docs/assets/myatlas_welcome.jpg" loading="lazy" alt="iPhone mockup"
+                                class="layout52_image-02">
                         </div>
                         <div id="w-node-_57baa5f5-9c16-4efc-f4b0-f64288480326-6e690cf3" class="layout52_content">
                             <div class="heading-subheading">About</div>
@@ -130,28 +131,38 @@
             </div>
         </div>
     </section>
-
-    <section class="section_layout52">
+    <section class="section_layout76">
         <div class="page-padding">
             <div class="container-large">
                 <div class="padding-vertical-xhuge">
-                    <div class="w-layout-grid layout52_component">
-                        <div id="w-node-_57baa5f5-9c16-4efc-f4b0-f64288480326-6e690cf3" class="layout52_content">
-                            <div class="heading-subheading">Features</div>
-                            <h2 class="heading-medium">Overflowing with useful features<br></h2>
-                            <div class="space-xsmall"></div>
-                            <div class="text-size-large">Powerful, self-serve product and growth analytics to help
-                                you convert, engage, and retain more users. Trusted by over 4,000 startups.</div>
+                    <div class="layout76_component">
+                        <div class="text-align-center">
+                            <div class="max-width-large">
+                                <div class="heading-subheading">Features</div>
+                                <h2 class="heading-medium">A platform desgined for travel enthusiasts</h2>
+                                <div class="space-xsmall"></div>
+                                <div class="text-size-large">Share your travel photos with others and see your friends
+                                    photos right on the map where they were taken.
+                                </div>
+                            </div>
                         </div>
-                        <div class="layout52_image-wrapper"><img
-                                src="https://assets-global.website-files.com/662ed2f6e535323a6e690ce3/662ed3f97e7dcd020405bf9b_iphone-mockup-01.png"
-                                loading="lazy" alt="iPhone mockup" class="layout52_image-02"><img
-                                src="https://assets-global.website-files.com/plugins/Basic/assets/placeholder.60f9b1840c.svg"
-                                loading="lazy" alt="" class="image-collage__item-1"><img
-                                src="https://assets-global.website-files.com/plugins/Basic/assets/placeholder.60f9b1840c.svg"
-                                loading="lazy" alt="" class="image-collage__item-2"><img
-                                src="https://assets-global.website-files.com/plugins/Basic/assets/placeholder.60f9b1840c.svg"
-                                loading="lazy" alt="" class="image-collage__item-3"></div>
+                        <div class="w-layout-grid layout76_list">
+                            <div class="layout76_item">
+                                <div class="layout76_image-wrapper phone"><img src="/docs/assets/camera.jpg"
+                                        loading="lazy" alt="" class="layout76_image"></div>
+                                <h3 class="heading-xxsmall">Take photos with the camera</h3>
+                            </div>
+                            <div class="layout76_item">
+                                <div class="layout76_image-wrapper phone"><img src="/docs/assets/gallery.jpg"
+                                        loading="lazy" alt="" class="layout76_image"></div>
+                                <h3 class="heading-xxsmall">Post about your travels</h3>
+                            </div>
+                            <div class="layout76_item">
+                                <div class="layout76_image-wrapper phone"><img src="/docs/assets/map.jpg" loading="lazy"
+                                        alt="" class="layout76_image"></div>
+                                <h3 class="heading-xxsmall">See your friends posts on the map</h3>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -162,88 +173,32 @@
             <div class="container-large">
                 <div class="padding-vertical-xhuge">
                     <div class="w-layout-grid layout08_component">
-                        <div class="layout52_image-wrapper"><img
-                                src="https://assets-global.website-files.com/plugins/Basic/assets/placeholder.60f9b1840c.svg"
-                                loading="lazy" alt="" class="tri-image__image-1"><img
-                                src="https://assets-global.website-files.com/plugins/Basic/assets/placeholder.60f9b1840c.svg"
-                                loading="lazy" alt="" class="tri-image__image-2"><img
-                                src="https://assets-global.website-files.com/plugins/Basic/assets/placeholder.60f9b1840c.svg"
-                                loading="lazy" alt="" class="tri-image__image-3">
+                        <div class="layout52_image-wrapper">
+                            <img src="/docs/assets/comments.jpg" loading="lazy" alt="" class="tri-image__image-1">
+                            <img src="/docs/assets/profile.jpg" loading="lazy" alt="" class="tri-image__image-2">
+                            <img src="/docs//assets/background_settings_day.jpg" loading="lazy" alt=""
+                                class="tri-image__image-3">
                         </div>
                         <div class="layout08_content">
                             <div class="heading-subheading">Features</div>
-                            <h2 class="heading-medium">Manage your team with reports</h2>
+                            <h2 class="heading-medium">Customize Your Profile</h2>
                             <div class="space-xsmall"></div>
-                            <div class="text-size-large">Measure what matters with Untitled’s easy-to-use reports.
-                                You can filter, export, and drilldown on the data in a couple clicks.</div>
-                            <div class="layout08_item-list">
-                                <div id="w-node-_46f58553-38a4-1688-f6f6-1b89a8a875bf-6e690cf3" class="layout08_item">
-                                    <div class="layout08_item-icon-wrapper">
-                                        <div class="icon-1x1-xsmall w-embed"><svg width="currentWidth"
-                                                height="currentHeight" viewBox="0 0 28 28" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M0 14C0 6.26801 6.26801 0 14 0V0C21.732 0 28 6.26801 28 14V14C28 21.732 21.732 28 14 28V28C6.26801 28 0 21.732 0 14V14Z"
-                                                    fill="#3c7efa78"></path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M19.9457 8.62169L11.5923 16.6834L9.37568 14.315C8.96734 13.93 8.32568 13.9067 7.85901 14.2334C7.40401 14.5717 7.27568 15.1667 7.55568 15.645L10.1807 19.915C10.4373 20.3117 10.8807 20.5567 11.3823 20.5567C11.8607 20.5567 12.3157 20.3117 12.5723 19.915C12.9923 19.3667 21.0073 9.81169 21.0073 9.81169C22.0573 8.73836 20.7857 7.79336 19.9457 8.61002V8.62169Z"
-                                                    fill="#0061FF"></path>
-                                            </svg></div>
-                                    </div>
-                                    <div class="layout08_item-text-wrapper">
-                                        <div class="text-size-large">Filter, export, and drilldown on the data
-                                            quickly</div>
-                                    </div>
-                                </div>
-                                <div id="w-node-_46f58553-38a4-1688-f6f6-1b89a8a875c5-6e690cf3" class="layout08_item">
-                                    <div class="layout08_item-icon-wrapper">
-                                        <div class="icon-1x1-xsmall w-embed"><svg width="currentWidth"
-                                                height="currentHeight" viewBox="0 0 28 28" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M0 14C0 6.26801 6.26801 0 14 0V0C21.732 0 28 6.26801 28 14V14C28 21.732 21.732 28 14 28V28C6.26801 28 0 21.732 0 14V14Z"
-                                                    fill="#3c7efa78"></path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M19.9457 8.62169L11.5923 16.6834L9.37568 14.315C8.96734 13.93 8.32568 13.9067 7.85901 14.2334C7.40401 14.5717 7.27568 15.1667 7.55568 15.645L10.1807 19.915C10.4373 20.3117 10.8807 20.5567 11.3823 20.5567C11.8607 20.5567 12.3157 20.3117 12.5723 19.915C12.9923 19.3667 21.0073 9.81169 21.0073 9.81169C22.0573 8.73836 20.7857 7.79336 19.9457 8.61002V8.62169Z"
-                                                    fill="#0061FF"></path>
-                                            </svg></div>
-                                    </div>
-                                    <div class="layout08_item-text-wrapper">
-                                        <div class="text-size-large">Save, schedule, and automate reports to your
-                                            inbox</div>
-                                    </div>
-                                </div>
-                                <div id="w-node-_46f58553-38a4-1688-f6f6-1b89a8a875cb-6e690cf3" class="layout08_item">
-                                    <div class="layout08_item-icon-wrapper">
-                                        <div class="icon-1x1-xsmall w-embed"><svg width="currentWidth"
-                                                height="currentHeight" viewBox="0 0 28 28" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M0 14C0 6.26801 6.26801 0 14 0V0C21.732 0 28 6.26801 28 14V14C28 21.732 21.732 28 14 28V28C6.26801 28 0 21.732 0 14V14Z"
-                                                    fill="#3c7efa78"></path>
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M19.9457 8.62169L11.5923 16.6834L9.37568 14.315C8.96734 13.93 8.32568 13.9067 7.85901 14.2334C7.40401 14.5717 7.27568 15.1667 7.55568 15.645L10.1807 19.915C10.4373 20.3117 10.8807 20.5567 11.3823 20.5567C11.8607 20.5567 12.3157 20.3117 12.5723 19.915C12.9923 19.3667 21.0073 9.81169 21.0073 9.81169C22.0573 8.73836 20.7857 7.79336 19.9457 8.61002V8.62169Z"
-                                                    fill="#0061FF"></path>
-                                            </svg></div>
-                                    </div>
-                                    <div class="layout08_item-text-wrapper">
-                                        <div class="text-size-large">Connect the tools you already use with 100+
-                                            integrations</div>
-                                    </div>
-                                </div>
-                            </div>
+                            <div class="text-size-large">Share posts, make friends, comment on others travels and
+                                customize the look of your app.</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        </div>
     </section>
-    <section class="banner__section">
-
+    <section class="banner__section" id="try-now">
+        <iframe src="https://thunkable.site/w/xYOs2O4WcuAp0uW4u4mYk" title="MyAtlas Thunkable App" height=1000 width=500
+            class="live-app"></iframe>
     </section>
-    <!-- <footer class="footer04_component">
-        <div class="page-padding-2">
-            <div class="container-large-2">
+    <footer class="footer04_component">
+        <div class="page-padding">
+            <div class="container-large">
                 <div class="padding-vertical-xlarge">
                     <div class="d-grid footer04_top-wrapper">
                         <a href="#" class="footer04_logo-link w-inline-block">
@@ -256,24 +211,22 @@
                         </a>
                         <div class="d-grid footer04_link-list">
                             <a href="#" class="footer04_link text-link w-inline-block">
-                                <div>Overview</div>
-                            </a><a href="#" class="footer04_link text-link w-inline-block">
+                                <div>Home</div>
+                            </a>
+                            <a href="#about" class="footer04_link text-link w-inline-block">
+                                <div>About</div>
+                            </a><a href="#features" class="footer04_link text-link w-inline-block">
                                 <div>Features</div>
-                            </a><a href="#" class="footer04_link text-link w-inline-block">
-                                <div>Pricing</div>
-                            </a><a href="#" class="footer04_link text-link w-inline-block">
-                                <div>Careers</div>
-                            </a><a href="#" class="footer04_link text-link w-inline-block">
-                                <div>Help</div>
-                            </a><a href="#" class="footer04_link text-link w-inline-block">
-                                <div>Privacy</div>
+                            </a>
+                            <a href="https://github.com/ry-bro-uri/csc305-project/wiki" target="_blank"
+                                classs="footer04_link text-link w-inline-block">
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </footer> -->
+    </footer>
     <script src="index.js"></script>
 </body>
 
